@@ -4,8 +4,7 @@ mdb-navbar {
   width: 100%;
   top: 3rem;
   padding-left: 7rem;
-  padding-right: 2rem
-;
+  padding-right: 2rem;
 }
 
 :host ::ng-deep nav {
@@ -27,6 +26,6 @@ h1 {
 }
 
 .content-wrapper {
-  margin: 8rem 8rem
+  margin: 8rem 8rem 3rem 8rem;
 }
 

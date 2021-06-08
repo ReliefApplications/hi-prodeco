@@ -9,13 +9,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ArticlesComponent } from './components/articles/articles.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ProjectsComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    FooterComponent
   ],
   imports: [
     MDBBootstrapModule.forRoot(),
