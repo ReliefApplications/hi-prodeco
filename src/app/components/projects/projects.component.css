@@ -1,0 +1,10 @@
+h1{
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.card {
+  border: none;
+}
+img {
+  border-radius: 0.7rem;
+}
