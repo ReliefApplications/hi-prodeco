@@ -8,12 +8,14 @@ import { MobxAngularModule } from 'mobx-angular';
 import { HeaderComponent } from './components/header/header.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { ArticlesComponent } from './components/articles/articles.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ArticlesComponent
   ],
   imports: [
     MDBBootstrapModule.forRoot(),
