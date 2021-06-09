@@ -4,6 +4,7 @@ h2 {
 
 img {
   height: 240px;
+  width: 100%;
   border-radius: 0.7rem;
 }
 
@@ -11,7 +12,14 @@ img {
   border: none;
 }
 
-.card-footer{
+.card-footer {
   background: none;
   border: none;
+}
+
+#coverImage {
+  height: 240px;
+  width: 100%;
+  border-radius: 0.7rem;
+  background-position: center;
 }

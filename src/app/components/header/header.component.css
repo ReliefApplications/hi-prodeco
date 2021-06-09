@@ -2,6 +2,15 @@
   padding-bottom: 10rem !important;
 }
 
+.carousel-control-next, .carousel-control-prev, .carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: block;
+  text-align: center;
+}
+
+.col-12 {
+  padding: 0;
+}
+
 .indicators {
   margin-top: 7rem;
 }

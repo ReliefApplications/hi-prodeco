@@ -1,10 +1,26 @@
-mdb-navbar {
+.container {
+  position: relative;
+  max-width: 2048px;
+  min-width: 360px;
+  padding: 0;
+}
+
+.container mdb-navbar {
   position: absolute;
   z-index: 99;
-  width: 100%;
   top: 3rem;
-  padding-left: 7rem;
-  padding-right: 2rem;
+  right: 4rem;
+}
+
+.title {
+  /*font-family: Roboto;*/
+  font-size: 28px;
+  line-height: 1.67;
+  letter-spacing: 0.45px;
+  position: absolute;
+  z-index: 99;
+  left: 7rem;
+  top: 3rem;
 }
 
 :host ::ng-deep nav {
@@ -15,17 +31,12 @@ h1, span {
   color: white;
 }
 
-h1 {
-  /*font-family: Roboto;*/
-  font-size: 28px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.67;
-  letter-spacing: 0.45px;
-}
-
 .content-wrapper {
   margin: 8rem 8rem 3rem 8rem;
 }
 
+@media (max-width: 991px) {
+  #navbar-items {
+    width: 0;
+  }
+}

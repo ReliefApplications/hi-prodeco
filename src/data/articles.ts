@@ -10,7 +10,7 @@ export const Articles: Article[] = [
   ),
   new Article('2',
     'Article2', 'Description article 2',
-    'assets/projects/1/1.jpg',
+    'assets/projects/1/0.jpg',
     new Date(),
     'Afghanistan')
 ];

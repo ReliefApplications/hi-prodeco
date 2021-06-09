@@ -1,26 +1,28 @@
-<!--Navbar-->
-<mdb-navbar [containerInside]="false" class="title" SideClass="navbar navbar-expand-lg navbar-dark">
-  <!-- Navbar brand -->
-  <mdb-navbar-brand><h1>PRODECO</h1></mdb-navbar-brand>
-  <!-- Collapsible content -->
-  <links>
-    <!-- Links -->
-    <ul class="navbar-nav mr-auto"></ul>
-    <div class="form-inline waves-light" mdbWavesEffect>
-      <span class="nav-link waves-light" mdbWavesEffect>FR</span>
-      <span class="nav-link waves-light" mdbWavesEffect>EN</span>
-    </div>
-    <!-- Links -->
-  </links>
-</mdb-navbar>
-<!--Navbar-->
+<div class="container">
+  <h1 class="title">PRODECO</h1>
+  <mdb-navbar [containerInside]="false" SideClass="navbar navbar-expand-lg navbar-dark">
+    <!-- Navbar brand -->
+    <mdb-navbar-brand></mdb-navbar-brand>
+    <!-- Collapsible content -->
+    <links>
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto"></ul>
+      <div id="navbar-items" class="form-inline waves-light" mdbWavesEffect>
+        <span class="nav-link waves-light" mdbWavesEffect>FR</span>
+        <span class="nav-link waves-light" mdbWavesEffect>EN</span>
+      </div>
+      <!-- Links -->
+    </links>
+  </mdb-navbar>
 
-<app-header></app-header>
-<div class="content-wrapper">
-  <app-projects [projects]="projects"></app-projects>
-  <app-articles [articles]="articles"></app-articles>
+  <app-header></app-header>
+
+  <div class="content-wrapper">
+    <app-projects [projects]="projects"></app-projects>
+    <app-articles [articles]="articles"></app-articles>
+  </div>
+
+  <footer>
+    <app-footer></app-footer>
+  </footer>
 </div>
-
-<footer>
-  <app-footer></app-footer>
-</footer>

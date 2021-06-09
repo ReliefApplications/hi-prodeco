@@ -1,33 +1,37 @@
-<!--Carousel Wrapper-->
-<mdb-carousel [isControls]="false" class="carousel">
-  <!--Third slide-->
-  <mdb-carousel-item>
-    <!--Mask color-->
-    <div class="view">
-      <!--Video source-->
-      <video class="video-fluid" autoplay loop>
-        <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4"/>
-      </video>
-      <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
-    </div>
+<div class="row">
+  <div class="col-12">
+    <!--Carousel Wrapper-->
+    <mdb-carousel style="position: relative" [isControls]="false" class="carousel">
+      <!--slide-->
+      <mdb-carousel-item>
+        <!--Mask color-->
+        <div class="view">
+          <!--Video source-->
+          <video class="video-fluid" autoplay loop>
+            <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4"/>
+          </video>
+          <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+        </div>
 
-    <!--Caption-->
-    <div class="carousel-caption">
-      <div class="animated fadeInDown">
-        <h2>Exposition virtuelle</h2>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-      </div>
-      <div class="indicators row justify-content-center">
-        <div class="col">
-          <h1>INDICATOR1</h1>
+        <!--Caption-->
+        <div class="carousel-caption">
+          <div class="animated fadeInDown">
+            <h2>Exposition virtuelle</h2>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+          </div>
+          <div class="indicators row justify-content-center">
+            <div class="col">
+              <h1>INDICATOR1</h1>
+            </div>
+            <div class="col">
+              <h1>INDICATOR2</h1>
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <h1>INDICATOR2</h1>
-        </div>
-      </div>
-    </div>
-    <!--Caption-->
-  </mdb-carousel-item>
-  <!--/Third slide-->
-</mdb-carousel>
-<!--Carousel Wrapper-->
+        <!--Caption-->
+      </mdb-carousel-item>
+      <!--/slide-->
+    </mdb-carousel>
+    <!--Carousel Wrapper-->
+  </div>
+</div>

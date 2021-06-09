@@ -4,7 +4,8 @@
   </div>
   <div *ngFor="let article of articles" class="card col-lg-6 col-md-6 col-sm-12">
     <div>
-      <img class="img-fluid card-img-top" [src]="article.coverPictureUrl" alt="">
+      <div id="coverImage" [style.background]="'url(' + article.coverPictureUrl + ')'"
+           [style.backgroundPosition]="'center'"></div>
       <span>{{article.country}}</span>
     </div>
 
