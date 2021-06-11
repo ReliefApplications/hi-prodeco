@@ -1,0 +1,5 @@
+<app-header [indicators]="indicators"></app-header>
+<div class="content-wrapper">
+  <app-projects [projects]="projects" (viewProjectDetails)="goToProjectDetails($event)"></app-projects>
+  <app-articles [articles]="articles"></app-articles>
+</div>

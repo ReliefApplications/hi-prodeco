@@ -1,12 +1,14 @@
-<div class="row justify-content-center">
+<div class="row justify-content-xl-between justify-content-center">
   <div class="col-12">
     <h2>Volets</h2>
   </div>
-  <div *ngFor="let project of projects" class="card col-lg col-md-4 col-sm-6 col-xs-6">
-    <img class="card-img-top" [src]="project.coverPictureUrl" alt="">
-    <div class="card-body">
-      <h5 class="card-title">{{project.name}}</h5>
-    </div>
+  <div *ngFor="let project of projects" class="card col-xl-2 col-lg col-md-4">
+    <a (click)="viewProject(project.id)">
+      <img class="card-img-top" [src]="project.coverPictureUrl" alt="">
+      <div class="card-body">
+        <h5 class="card-title">{{project.name}}</h5>
+      </div>
+    </a>
   </div>
 </div>
 

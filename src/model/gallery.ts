@@ -1,11 +1,13 @@
 export class Gallery {
   url: string;
+  author: string;
   isVideo: boolean;
-  testimonials: string;
+  description: string;
 
-  constructor(data: {url: string, isVideo?: boolean, testimonials?: string}) {
+  constructor(data: { url: string, author: string, isVideo?: boolean, description?: string }) {
     this.url = data.url;
+    this.author = data.author;
     this.isVideo = data.isVideo ? data.isVideo : false;
-    this.testimonials = data.testimonials;
+    this.description = data.description;
   }
 }

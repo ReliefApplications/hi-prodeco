@@ -1,7 +1,16 @@
+h5 {
+  font-weight: bold;
+}
+
 h2 {
   margin-bottom: 3rem;
 }
 
 img {
   border-radius: 0.7rem;
+}
+
+a {
+  color: black;
+  cursor: pointer;
 }

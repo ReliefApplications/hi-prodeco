@@ -11,6 +11,9 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ArticlesComponent } from './components/articles/articles.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { IndicatorComponent } from './components/header/indicator/indicator.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,13 +22,16 @@ import { IndicatorComponent } from './components/header/indicator/indicator.comp
     ProjectsComponent,
     ArticlesComponent,
     FooterComponent,
-    IndicatorComponent
+    IndicatorComponent,
+    ProjectDetailsComponent,
+    HomeComponent
   ],
   imports: [
     MDBBootstrapModule.forRoot(),
     BrowserModule,
     NgbModule,
-    MobxAngularModule
+    MobxAngularModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
