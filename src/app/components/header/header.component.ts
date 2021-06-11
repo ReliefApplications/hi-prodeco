@@ -11,9 +11,12 @@ export class HeaderComponent implements OnInit {
   @Input()
   indicators: Indicator[] = [];
 
-  constructor() {  }
+  constructor() {
+  }
 
   ngOnInit(): void {
+    const element: any = document.getElementById('video');
+    element.muted = 'muted';
   }
 
 }

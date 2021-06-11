@@ -3,6 +3,11 @@
   text-align: center;
 }
 
+video {
+  max-width: 1920px;
+  width: 100%;
+}
+
 .col-12 {
   padding: 0;
 }
@@ -16,8 +21,26 @@ h2 {
   margin-bottom: 1rem;
 }
 
-@media (max-width: 422px) {
-  h4 {
+#indicators-mobile {
+  margin-right: 3rem;
+  margin-left: 3rem;
+  color: white;
+}
+
+@media (max-width: 1159px) {
+  h4, h2 {
+    display: none;
+  }
+}
+
+@media (min-width: 806px) {
+  #indicators-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 805px) {
+  #indicators {
     display: none;
   }
 }
