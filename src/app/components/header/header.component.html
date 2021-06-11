@@ -12,19 +12,15 @@
           </video>
           <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
         </div>
-
         <!--Caption-->
         <div class="carousel-caption">
           <div class="animated fadeInDown">
             <h2>Exposition virtuelle</h2>
             <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
           </div>
-          <div class="indicators row justify-content-center">
-            <div class="col">
-              <h1>INDICATOR1</h1>
-            </div>
-            <div class="col">
-              <h1>INDICATOR2</h1>
+          <div class="row justify-content-center">
+            <div class="col" *ngFor="let indicator of indicators">
+              <app-indicator [indicator]="indicator"></app-indicator>
             </div>
           </div>
         </div>

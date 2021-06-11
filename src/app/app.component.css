@@ -40,3 +40,10 @@ h1, span {
     width: 0;
   }
 }
+
+@media (max-width: 601px) {
+  .content-wrapper {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}

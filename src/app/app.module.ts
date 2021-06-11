@@ -10,6 +10,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ArticlesComponent } from './components/articles/articles.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { IndicatorComponent } from './components/header/indicator/indicator.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderComponent,
     ProjectsComponent,
     ArticlesComponent,
-    FooterComponent
+    FooterComponent,
+    IndicatorComponent
   ],
   imports: [
     MDBBootstrapModule.forRoot(),

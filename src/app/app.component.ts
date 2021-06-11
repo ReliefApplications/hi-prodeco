@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { mainStore } from '../store/main-store';
 import { Project } from '../model/project';
 import { Article } from '../model/article';
+import { Indicator } from '../model/indicator';
 
 @Component({
   selector: 'app-root',
@@ -13,11 +14,12 @@ export class AppComponent {
 
   public projects: Project[];
   public articles: Article[];
+  public indicators: Indicator[];
 
 
   constructor() {
     this.projects = mainStore.projects;
     this.articles = mainStore.articles;
-    console.log('ARTICLES', this.articles);
+    this.indicators = mainStore.indicators;
   }
 }

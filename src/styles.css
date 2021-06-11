@@ -2,3 +2,17 @@
 html, body {
   overflow-x: hidden;
 }
+
+.card {
+  border: none;
+}
+
+.card-body {
+  padding-left: 0;
+}
+
+.card-footer {
+  padding-left: 0;
+  background: none;
+  border: none;
+}
