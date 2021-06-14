@@ -2,8 +2,26 @@
   margin: 8rem 8rem 3rem 8rem;
 }
 
+app-navbar {
+  position: absolute;
+  z-index: 99;
+  top: 0.1rem;
+  right: 0.1rem;
+}
+
+h1 {
+  color: white;
+  position: absolute;
+  z-index: 99;
+  top: 3.5rem;
+  left: 8rem;
+}
+
 @media (max-width: 601px) {
   .content-wrapper {
     margin: 4rem 1rem;
+  }
+  h1 {
+    left: 1rem;
   }
 }

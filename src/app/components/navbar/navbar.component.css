@@ -1,0 +1,22 @@
+#nav-content {
+  margin-top: 3rem;
+  margin-right: 4rem;
+}
+
+.title {
+  font-size: 28px;
+  line-height: 1.67;
+  letter-spacing: 0.45px;
+  margin-left: 8rem;
+  margin-top: 3.5rem;
+}
+
+:host ::ng-deep nav {
+  box-shadow: none !important;
+}
+
+@media (max-width: 991px) {
+  #navbar-items {
+    width: 0;
+  }
+}

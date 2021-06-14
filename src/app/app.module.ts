@@ -14,6 +14,7 @@ import { IndicatorComponent } from './components/header/indicator/indicator.comp
 import { AppRoutingModule } from './app-routing.module';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     IndicatorComponent,
     ProjectDetailsComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent
   ],
   imports: [
     MDBBootstrapModule.forRoot(),

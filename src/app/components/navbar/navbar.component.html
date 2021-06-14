@@ -1,0 +1,18 @@
+<!--<a routerLink="/home"><h1 class="title">PRODECO</h1></a>-->
+<div id="nav-content" class="row justify-content-end">
+  <mdb-navbar [containerInside]="false" SideClass="navbar navbar-expand-lg"
+              [className]="color === 'white' ? 'navbar-dark' : 'navbar-light' ">
+    <!-- Navbar brand -->
+    <mdb-navbar-brand></mdb-navbar-brand>
+    <!-- Collapsible content -->
+    <links>
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto"></ul>
+      <div [style.color]="color" id="navbar-items" class="form-inline waves-light" mdbWavesEffect>
+        <span class="nav-link waves-light" mdbWavesEffect>FR</span>
+        <span class="nav-link waves-light" mdbWavesEffect>EN</span>
+      </div>
+      <!-- Links -->
+    </links>
+  </mdb-navbar>
+</div>

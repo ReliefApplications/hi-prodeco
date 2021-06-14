@@ -1,3 +1,14 @@
-<div class="container">
-  <h1>{{project.name}}</h1>
+<div class="row row-cols-2">
+  <div style="float: left">
+    <a routerLink="/home">
+      <h1>PRODECO</h1>
+    </a>
+  </div>
+  <div style="float: right">
+    <app-navbar [color]="'black'"></app-navbar>
+  </div>
+</div>
+<div class="header">
+  <h2>{{project.name}}</h2>
+  <h4>{{project.description}}</h4>
 </div>
