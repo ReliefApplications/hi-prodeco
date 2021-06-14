@@ -8,7 +8,11 @@ export const Projects: Project[] = [
     'assets/projects/1/1.jpg',
     new Date(),
     [
-      new Gallery({url: 'assets/projects/deminage/deminage_HI_Fada-3.jpg', author: 'Gwenn Dubourthoumieu'}),
+      new Gallery({
+        url: 'assets/projects/deminage/deminage_HI_Fada-3.jpg',
+        author: 'Gwenn Dubourthoumieu',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in dui quis magna finibus dapibus. Aenean rhoncus urna in venenatis congue. Morbi sit amet lacus nec ligula ultrices ornare id ac neque. Integer eget accumsan turpis. Fusce sodales turpis nec diam volutpat, vel laoreet lacus elementum. Nullam finibus non tellus eu dignissim. Etiam lobortis purus at erat finibus, at condimentum nulla hendrerit. Pellentesque aliquam nisl ut lorem posuere, nec hendrerit risus fermentum. Aliquam pharetra dui felis, vitae finibus elit tempor et. Fusce ante lorem, ultricies nec euismod rutrum, blandit ornare lorem. Fusce eleifend neque neque, vitae consequat enim blandit id. Donec at imperdiet felis.'
+      }),
       new Gallery({url: 'assets/projects/deminage/deminage_HI_Fada-4.jpg', author: 'Gwenn Dubourthoumieu'}),
       new Gallery({url: 'assets/projects/deminage/deminage_HI_Fada-5.jpg', author: 'Gwenn Dubourthoumieu'}),
       new Gallery({url: 'assets/projects/deminage/deminage_HI_Fada-7.jpg', author: 'Gwenn Dubourthoumieu'}),
