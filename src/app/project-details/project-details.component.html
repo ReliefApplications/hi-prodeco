@@ -8,7 +8,18 @@
     <app-navbar [color]="'black'"></app-navbar>
   </div>
 </div>
-<div class="header">
-  <h2>{{project.name}}</h2>
-  <h4>{{project.description}}</h4>
+<div class="content">
+  <div class="header">
+    <h2>{{project.name}}</h2>
+    <h4>{{project.description}}</h4>
+    <h5>Crédits et remerciements - Copyright</h5>
+  </div>
+  <div class="row justify-content-between">
+    <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let image of project.gallery">
+      <span *ngIf="image.isVideo" id="video-marker">
+        <img width="45px" src="/assets/play-circle.svg">
+      </span>
+      <img class="img-fluid" [src]="image.url">
+    </div>
+  </div>
 </div>
