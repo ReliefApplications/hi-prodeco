@@ -14,3 +14,10 @@ img {
   border-radius: 0.7rem;
   background-position: center;
 }
+
+.card-text {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

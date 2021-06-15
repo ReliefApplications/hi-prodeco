@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Article } from '../../../model/article';
+import { getDayMonthYear } from '../../../utils/date-utils';
 
 @Component({
   selector: 'app-articles',
@@ -11,13 +12,13 @@ export class ArticlesComponent implements OnInit {
   @Input()
   articles: Article[] = [];
 
-  public monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
-    'July', 'August', 'September', 'October', 'November', 'December'
-  ];
-
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public formatDate(date: Date): string {
+    return getDayMonthYear(date);
   }
 
 }

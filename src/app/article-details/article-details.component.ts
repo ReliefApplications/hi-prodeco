@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Article } from '../../model/article';
+import { mainStore } from '../../store/main-store';
+import { ActivatedRoute, Router } from '@angular/router';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { getDayMonthYear } from '../../utils/date-utils';
 
 @Component({
   selector: 'app-article-details',
@@ -7,9 +12,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticleDetailsComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  article: Article;
 
-  ngOnInit(): void {
+  constructor(private route: ActivatedRoute, private router: Router
+  ) {
   }
 
+  ngOnInit(): void {
+    const articleID = this.route.snapshot.paramMap.get('id');
+    this.article = mainStore.articles.find(article => article.id === articleID);
+    if (!this.article) {
+      this.router.navigate(['/home']).then();
+    }
+  }
+
+  formatDate(): string {
+    return getDayMonthYear(this.article.date);
+  }
 }

@@ -3,7 +3,7 @@ import { Article } from '../model/article';
 export const Articles: Article[] = [
   new Article('1',
     'Article1',
-    'Description article 1',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     'assets/projects/1/1.jpg',
     new Date(),
     'Colombia'
