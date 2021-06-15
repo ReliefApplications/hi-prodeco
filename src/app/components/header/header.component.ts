@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Indicator } from '../../../model/indicator';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +12,7 @@ export class HeaderComponent implements OnInit {
   @Input()
   indicators: Indicator[] = [];
 
-  constructor() {
+  constructor(public translate: TranslateService) {
   }
 
   ngOnInit(): void {

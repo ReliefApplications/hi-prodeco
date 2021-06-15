@@ -8,20 +8,21 @@ import { Indicators } from '../data/indicators';
 
 export class MainStore {
 
+  translateService;
+
   @observable projects: Project[] = [];
   @observable articles: Article[] = [];
   @observable indicators: Indicator[] = [];
-  @observable language: 'EN' | 'FR';
+  @observable language: string;
 
   constructor(projects: Project[], articles: Article[], indicators: Indicator[]) {
     this.projects = projects;
     this.articles = articles;
     this.indicators = indicators;
-    this.language = navigator.language.includes('FR') ? 'FR' : 'EN';
   }
 
   @action
-  setLanguage(language: 'EN' | 'FR'): void {
+  setLanguage(language: string): void {
     this.language = language;
   }
 }

@@ -1,0 +1,31 @@
+{
+  "header": {
+    "title": "Virtual exposition",
+    "subtitle": ""
+  },
+  "indicators": {},
+  "projects": {
+    "deminage": {
+      "title": "Mine clearance (MAG and HI) in northern Chad",
+      "description": ""
+    },
+    "assistance": {
+      "title": "Victim assistance",
+      "description": ""
+    },
+    "insertion": {
+      "title": "Socio-economic integration",
+      "description": ""
+    },
+    "recherche": {
+      "title": "Research",
+      "description": ""
+    },
+    "institutionnel": {
+      "title": "Institutional support\n",
+      "description": ""
+    }
+  },
+  "projects_section": "Projects",
+  "articles_section": "About the project"
+}

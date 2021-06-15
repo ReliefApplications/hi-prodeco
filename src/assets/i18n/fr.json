@@ -1,0 +1,31 @@
+{
+  "header": {
+    "title": "Exposition virtuelle",
+    "subtitle": ""
+  },
+  "indicators": {},
+  "projects": {
+    "deminage": {
+      "title": "Déminage (MAG et HI) au nord du Tchad",
+      "description": ""
+    },
+    "assistance": {
+      "title": "Assistance aux victimes",
+      "description": ""
+    },
+    "insertion": {
+      "title": "Insertion socio-économiques",
+      "description": ""
+    },
+    "recherche": {
+      "title": "Recherche",
+      "description": ""
+    },
+    "institutionnel": {
+      "title": "Appui institutionnel",
+      "description": ""
+    }
+  },
+  "projects_section": "Volets",
+  "articles_section": "A propos du project"
+}

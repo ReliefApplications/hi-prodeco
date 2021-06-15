@@ -16,6 +16,13 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ArticleDetailsComponent } from './article-details/article-details.component';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+export function HttpLoaderFactory(http: HttpClient): any {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -31,8 +38,18 @@ import { ArticleDetailsComponent } from './article-details/article-details.compo
     ArticleDetailsComponent
   ],
   imports: [
-    MDBBootstrapModule.forRoot(),
     BrowserModule,
+    HttpClientModule,
+    TranslateModule.forRoot(
+      {
+        loader: {
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient]
+        }
+      }
+    ),
+    MDBBootstrapModule.forRoot(),
     NgbModule,
     MobxAngularModule,
     AppRoutingModule
