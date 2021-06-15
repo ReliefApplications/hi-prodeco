@@ -24,7 +24,6 @@ export class HomeComponent implements OnInit {
   }
 
   goToProjectDetails(id: string): void {
-    console.log('PROJECT', id);
     this.router.navigate(['/project-details', id]).then();
   }
 

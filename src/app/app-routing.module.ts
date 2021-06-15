@@ -4,10 +4,10 @@ import { HomeComponent } from './home/home.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: '', component: HomeComponent},
+  {path: 'project-details/:id', component: ProjectDetailsComponent},
   {path: 'home', component: HomeComponent},
-  {path: 'project-details/:id', component: ProjectDetailsComponent}
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: '**', redirectTo: '/home', pathMatch: 'full'}
 ];
 
 @NgModule({
