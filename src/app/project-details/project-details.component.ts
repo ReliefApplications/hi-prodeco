@@ -28,12 +28,28 @@ export class ProjectDetailsComponent implements OnInit {
     if (!this.project) {
       this.router.navigate(['/home']).then();
     }
+
+    document.addEventListener('keydown', (event) => {
+      const keyName = event.key;
+      if (this.currentGalleryImageIndex >= 0) {
+        if (keyName === 'ArrowLeft') {
+          this.displayPrev();
+        } else if (keyName === 'ArrowRight') {
+          this.displayNext();
+        }
+      }
+    });
   }
 
   showInFullScreen(content: any, image: Gallery, index: number): void {
     this.currentGalleryImage = image;
     this.currentGalleryImageIndex = index;
     this.modalService.open(content, {centered: true, size: 'xl'});
+  }
+
+  onCloseModal(): void {
+    this.modalService.dismissAll();
+    this.currentGalleryImageIndex = null;
   }
 
   displayPrev(): void {
