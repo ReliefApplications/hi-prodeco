@@ -93,19 +93,125 @@ export const Projects: Project[] = [
         author: 'Louani Com'
       })
     ]),
-  new Project('insertion_sociaux',
+  new Project('insertion',
     'Insertion socio-économiques',
     'Description Insertion socio-économiques',
-    'assets/projects/insertion_sociaux_economique/PRODECO_insertion_socio-economique_portrait_beneficaire_Fada-6.jpg',
+    'assets/projects/insertion_socio_economique/PRODECO_insertion_socio-economique_portrait_beneficaire_Fada-6.jpg',
     new Date(),
-    []
+    [
+      new Gallery({
+        url: 'assets/projects/insertion_socio_economique/1 . Activité HI - Achat de mouton par les béneficiaires.jpg',
+        author: 'Louani Com'
+      }),
+      new Gallery({
+        url: 'assets/projects/insertion_socio_economique/5. Activité HI - Programme ISE - Brahim accompagne sa maman qui est bénéficaire du programme ISE.jpg',
+        author: 'Louani Com'
+      }),
+      new Gallery({
+        url: 'assets/projects/insertion_socio_economique/8. Activité HI - Programme ISE - Aché - Commerçante au marché fada-.jpg',
+        author: 'Louani Com'
+      }),
+      new Gallery({
+        url: 'assets/projects/insertion_socio_economique/16. Activité HI - Programme ISE - Recensement d_un bénéficiaire du programme ISE 1.jpg',
+        author: 'Louani Com'
+      }),
+      new Gallery({
+        url: 'assets/projects/insertion_socio_economique/insertion socio-economique_portrait bénéficaire_Fada-5.jpg',
+        author: 'Gwenn Dubourthoumieu'
+      }),
+      new Gallery({
+        url: 'assets/projects/insertion_socio_economique/PRODECO_insertion socio-économique_AVEC_Fada-3.jpg',
+        author: 'Gwenn Dubourthoumieu'
+      }),
+      new Gallery({
+        url: 'assets/projects/insertion_socio_economique/PRODECO_insertion socio-économique_AVEC_Fada-4.jpg',
+        author: 'Gwenn Dubourthoumieu'
+      }),
+      new Gallery({
+        url: 'assets/projects/insertion_socio_economique/PRODECO_insertion socio-économique_distribution médicaments_Fada-1.jpg',
+        author: 'Gwenn Dubourthoumieu'
+      }),
+      new Gallery({
+        url: 'assets/projects/insertion_socio_economique/PRODECO_insertion socio-économique_filets sociaux_Fada-1.jpg',
+        author: 'Gwenn Dubourthoumieu'
+      }),
+      new Gallery({
+        url: 'assets/projects/insertion_socio_economique/PRODECO_insertion socio-économique_foire agricole_Fada-8.jpg',
+        author: 'Gwenn Dubourthoumieu'
+      }),
+      new Gallery({
+        url: 'assets/projects/insertion_socio_economique/PRODECO_insertion socio-économique_foire agricole_Fada-10.jpg',
+        author: 'Gwenn Dubourthoumieu'
+      }),
+      new Gallery({
+        url: 'assets/projects/insertion_socio_economique/PRODECO_insertion socio-économique_portrait bénéficaire_Fada-2.jpg',
+        author: 'Gwenn Dubourthoumieu'
+      }),
+      new Gallery({
+        url: 'assets/projects/insertion_socio_economique/PRODECO_insertion socio-économique_portrait bénéficaire_Fada-3.jpg',
+        author: 'Gwenn Dubourthoumieu'
+      }),
+      new Gallery({
+        url: 'assets/projects/insertion_socio_economique/PRODECO_insertion_socio-economique_portrait_beneficaire_Fada-6.jpg',
+        author: 'Gwenn Dubourthoumieu'
+      })
+    ]
   ),
   new Project('institutionnel',
     'Appui institutionnel',
     'Description Appui institutionnel',
-    'assets/projects/1/1.jpg',
+    'assets/projects/appui_institutionnel/17. PRODECO_renforcement institutionnel_NDjamena-16.jpg',
     new Date(),
-    []
+    [
+      new Gallery({
+        url: 'assets/projects/appui_institutionnel/PRODECO_renforcement institutionnel _Fada-1.jpg',
+        author: 'Gwenn Dubourthoumieu'
+      }),
+      new Gallery({
+        url: 'assets/projects/appui_institutionnel/PRODECO_renforcement institutionnel _Fada-2.jpg',
+        author: 'Gwenn Dubourthoumieu'
+      }),
+      new Gallery({
+        url: 'assets/projects/appui_institutionnel/PRODECO_renforcement institutionnel _Fada-4.jpg',
+        author: 'Gwenn Dubourthoumieu'
+      }),
+      new Gallery({
+        url: 'assets/projects/appui_institutionnel/PRODECO_renforcement institutionnel _Fada-6.jpg',
+        author: 'Gwenn Dubourthoumieu'
+      }),
+      new Gallery({
+        url: 'assets/projects/appui_institutionnel/PRODECO_renforcement institutionnel_NDjamena-1.jpg',
+        author: 'Gwenn Dubourthoumieu'
+      }),
+      new Gallery({
+        url: 'assets/projects/appui_institutionnel/PRODECO_renforcement institutionnel_NDjamena-2.jpg',
+        author: 'Gwenn Dubourthoumieu'
+      }),
+      new Gallery({
+        url: 'assets/projects/appui_institutionnel/PRODECO_renforcement institutionnel_NDjamena-8.jpg',
+        author: 'Gwenn Dubourthoumieu'
+      }),
+      new Gallery({
+        url: 'assets/projects/appui_institutionnel/PRODECO_renforcement institutionnel_NDjamena-9.jpg',
+        author: 'Gwenn Dubourthoumieu'
+      }),
+      new Gallery({
+        url: 'assets/projects/appui_institutionnel/PRODECO_renforcement institutionnel_NDjamena-11.jpg',
+        author: 'Gwenn Dubourthoumieu'
+      }),
+      new Gallery({
+        url: 'assets/projects/appui_institutionnel/PRODECO_renforcement institutionnel_NDjamena-14.jpg',
+        author: 'Gwenn Dubourthoumieu'
+      }),
+      new Gallery({
+        url: 'assets/projects/appui_institutionnel/PRODECO_renforcement institutionnel_NDjamena-15.jpg',
+        author: 'Gwenn Dubourthoumieu'
+      }),
+      new Gallery({
+        url: 'assets/projects/appui_institutionnel/17. PRODECO_renforcement institutionnel_NDjamena-16.jpg',
+        author: 'Louani Com'
+      })
+    ]
   ),
   new Project('recherche',
     'Recherche',
