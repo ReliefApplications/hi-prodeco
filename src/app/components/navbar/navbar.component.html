@@ -8,9 +8,13 @@
     <links>
       <!-- Links -->
       <ul class="navbar-nav mr-auto"></ul>
-      <div [style.color]="color" id="navbar-items" class="form-inline waves-light" mdbWavesEffect>
-        <span class="nav-link waves-light" mdbWavesEffect>FR</span>
-        <span class="nav-link waves-light" mdbWavesEffect>EN</span>
+      <div id="navbar-items" class="form-inline waves-light" mdbWavesEffect>
+        <span [style.color]="selectedLanguage === 'FR' ? 'white' : '#2582cd'"
+              [style.background]="selectedLanguage === 'FR' ? '#2582cd' : ''" (click)="onchangeLanguage('FR')"
+              class="nav-link waves-light pointer" mdbWavesEffect>FR</span>
+        <span [style.color]="selectedLanguage === 'EN' ? 'white' : '#2582cd'"
+              [style.background]="selectedLanguage === 'EN' ? '#2582cd' : ''" (click)="onchangeLanguage('EN')"
+              class="nav-link waves-light pointer" mdbWavesEffect>EN</span>
       </div>
       <!-- Links -->
     </links>

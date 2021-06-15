@@ -1,4 +1,4 @@
-import { observable } from 'mobx';
+import { action, observable } from 'mobx';
 import { Project } from '../model/project';
 import { Article } from '../model/article';
 import { Indicator } from '../model/indicator';
@@ -11,11 +11,18 @@ export class MainStore {
   @observable projects: Project[] = [];
   @observable articles: Article[] = [];
   @observable indicators: Indicator[] = [];
+  @observable language: 'EN' | 'FR';
 
   constructor(projects: Project[], articles: Article[], indicators: Indicator[]) {
     this.projects = projects;
     this.articles = articles;
     this.indicators = indicators;
+    this.language = navigator.language.includes('FR') ? 'FR' : 'EN';
+  }
+
+  @action
+  setLanguage(language: 'EN' | 'FR'): void {
+    this.language = language;
   }
 }
 
