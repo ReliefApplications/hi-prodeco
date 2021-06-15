@@ -4,6 +4,7 @@ import { mainStore } from '../../store/main-store';
 import { Project } from '../../model/project';
 import { Gallery } from '../../model/gallery';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-project-details',
@@ -19,7 +20,8 @@ export class ProjectDetailsComponent implements OnInit {
 
   private currentGalleryImageIndex: number;
 
-  constructor(private route: ActivatedRoute, private router: Router, public modalService: NgbModal) {
+  constructor(private route: ActivatedRoute, private router: Router,
+              public modalService: NgbModal, public translate: TranslateService) {
   }
 
   ngOnInit(): void {

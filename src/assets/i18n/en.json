@@ -7,15 +7,51 @@
   "projects": {
     "deminage": {
       "title": "Mine clearance (MAG and HI) in northern Chad",
-      "description": ""
+      "description": "",
+      "gallery": {
+        "gwenn": {
+          "fada_3": "",
+          "fada_4": "",
+          "fada_5": "",
+          "fada_7": "",
+          "fada_1": "",
+          "mag_fada_3": "",
+          "liaison_fada_6_3": "",
+          "mag_fada_1": "",
+          "mag_fada_13": ""
+        }
+      }
     },
     "assistance": {
       "title": "Victim assistance",
-      "description": ""
+      "description": "",
+      "gallery": {
+        "gwenn": {
+          "victimes_fada_2": "",
+          "victimes_fada_5": "",
+          "victimes_fada_7": "",
+          "victimes_ndjamena_2_3": "",
+          "victimes_ndjamena_5": "",
+          "victimes_ndjamena_8": "",
+          "victimes_ndjamena_10": ""
+        }
+      }
     },
     "insertion": {
       "title": "Socio-economic integration",
-      "description": ""
+      "description": "",
+      "gallery": {
+        "gwenn": {
+          "fada_4_3": "",
+          "medicaments_fada_1": "",
+          "sociaux_fada_1": "",
+          "agricole_fada_8_10": "",
+          "beneficiaire_fada_2": "",
+          "beneficiaire_fada_4": "",
+          "beneficiaire_fada_5": "",
+          "beneficiaire_fada_6": ""
+        }
+      }
     },
     "recherche": {
       "title": "Research",
@@ -23,7 +59,16 @@
     },
     "institutionnel": {
       "title": "Institutional support\n",
-      "description": ""
+      "description": "",
+      "gallery": {
+        "gwenn": {
+          "fada_1_2_4": "",
+          "fada_6": "",
+          "ndjamena_1_2": "",
+          "ndjamena_8_9_11_14": "",
+          "ndjamena_15": ""
+        }
+      }
     }
   },
   "projects_section": "Projects",

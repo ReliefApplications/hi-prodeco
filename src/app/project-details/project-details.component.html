@@ -9,14 +9,15 @@
   <div style="position:absolute; top: 40%; right: 0.1rem">
     <img (click)="displayNext()" class="pointer" width="45" src="/assets/angle-right-b.svg" alt="">
   </div>
-  <div class="pointer" (click)="shoGalleryInfo = !shoGalleryInfo" [style]="shoGalleryInfo ? 'border: solid 1px' : ''" id="show-info">
+  <div class="pointer" (click)="shoGalleryInfo = !shoGalleryInfo" [style]="shoGalleryInfo ? 'border: solid 1px' : ''"
+       id="show-info">
     <img width="25"
          [src]="shoGalleryInfo ? '/assets/image.svg' : '/assets/align-left-justify.svg'" alt="">
   </div>
 
   <div *ngIf="shoGalleryInfo" class="modal-footer">
     <div class="btn-block ml-1">
-      <p>{{currentGalleryImage.description}}</p>
+      <p>{{'projects.' + project.id + '.gallery.' + currentGalleryImage.description | translate}}</p>
       <p>Author: {{currentGalleryImage.author}}</p>
     </div>
   </div>
