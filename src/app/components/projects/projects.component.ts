@@ -11,15 +11,9 @@ export class ProjectsComponent implements OnInit {
   @Input()
   projects: Project[] = [];
 
-  @Output()
-  viewProjectDetails: EventEmitter<string> = new EventEmitter<string>();
-
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  viewProject(id: string): void {
-    this.viewProjectDetails.emit(id);
-  }
 }

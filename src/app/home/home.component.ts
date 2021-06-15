@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Project } from '../../model/project';
 import { Article } from '../../model/article';
 import { Indicator } from '../../model/indicator';
-import { Router } from '@angular/router';
 import { mainStore } from '../../store/main-store';
 
 @Component({
@@ -17,16 +16,13 @@ export class HomeComponent implements OnInit {
   public articles: Article[];
   public indicators: Indicator[];
 
-  constructor(private router: Router) {
+  constructor() {
     this.projects = mainStore.projects;
     this.articles = mainStore.articles;
     this.indicators = mainStore.indicators;
   }
 
-  goToProjectDetails(id: string): void {
-    this.router.navigate(['/project-details', id]).then();
+  ngOnInit(): void {
   }
-
-  ngOnInit(): void { }
 
 }

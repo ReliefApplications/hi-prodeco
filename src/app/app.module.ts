@@ -15,6 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ArticleDetailsComponent } from './article-details/article-details.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     IndicatorComponent,
     ProjectDetailsComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    ArticleDetailsComponent
   ],
   imports: [
     MDBBootstrapModule.forRoot(),

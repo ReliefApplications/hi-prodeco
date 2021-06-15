@@ -16,3 +16,8 @@ html, body {
   background: none;
   border: none;
 }
+
+.pointer {
+  cursor: pointer;
+}
+

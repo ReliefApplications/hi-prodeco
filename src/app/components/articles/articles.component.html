@@ -2,20 +2,22 @@
   <div class="col-12">
     <h2>A propos du project</h2>
   </div>
-  <div *ngFor="let article of articles" class="card col-lg-6 col-md-6 col-sm-12">
-    <div>
-      <div id="coverImage" [style.background]="'url(' + article.coverPictureUrl + ')'"
-           [style.backgroundPosition]="'center'"></div>
-      <span>{{article.country}}</span>
-    </div>
+  <div *ngFor="let article of articles" class="card col-lg-6 col-md-6 col-sm-12 pointer">
+    <div [routerLink]="'/article-details/'+article.id">
+      <div>
+        <div id="coverImage" [style.background]="'url(' + article.coverPictureUrl + ')'"
+             [style.backgroundPosition]="'center'"></div>
+        <span>{{article.country}}</span>
+      </div>
 
-    <div class="card-body">
-      <h4 class="card-title">{{article.name}}</h4>
-      <p class="card-text">
-        {{article.description}}
-      </p>
+      <div class="card-body">
+        <h4 class="card-title">{{article.name}}</h4>
+        <p class="card-text">
+          {{article.description}}
+        </p>
+      </div>
+      <div
+        class="card-footer">{{article.date.getDate()}} {{monthNames[article.date.getMonth()]}} {{article.date.getFullYear()}}</div>
     </div>
-    <div
-      class="card-footer">{{article.date.getDate()}} {{monthNames[article.date.getMonth()]}} {{article.date.getFullYear()}}</div>
   </div>
 </div>
