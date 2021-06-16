@@ -1,18 +1,18 @@
 <ng-template #content let-modal>
   <div style="position:absolute; top: 0.5rem; right: 0.5rem">
-    <img class="pointer" (click)="onCloseModal()" width="25" src="/assets/multiply.svg" alt="">
+    <img class="pointer" (click)="onCloseModal()" width="25" src="./assets/multiply.svg" alt="">
   </div>
   <div style="position:absolute; top: 40%; left: 0.1rem">
-    <img (click)="displayPrev()" class="pointer" width="45" src="/assets/angle-left-b.svg" alt="">
+    <img (click)="displayPrev()" class="pointer" width="45" src="./assets/angle-left-b.svg" alt="">
   </div>
   <img *ngIf="!currentGalleryImage.isVideo" [src]="currentGalleryImage.url">
   <div style="position:absolute; top: 40%; right: 0.1rem">
-    <img (click)="displayNext()" class="pointer" width="45" src="/assets/angle-right-b.svg" alt="">
+    <img (click)="displayNext()" class="pointer" width="45" src="./assets/angle-right-b.svg" alt="">
   </div>
   <div class="pointer" (click)="shoGalleryInfo = !shoGalleryInfo" [style]="shoGalleryInfo ? 'border: solid 1px' : ''"
        id="show-info">
     <img width="25"
-         [src]="shoGalleryInfo ? '/assets/image.svg' : '/assets/align-left-justify.svg'" alt="">
+         [src]="shoGalleryInfo ? './assets/image.svg' : './assets/align-left-justify.svg'" alt="">
   </div>
 
   <div *ngIf="shoGalleryInfo" class="modal-footer">
