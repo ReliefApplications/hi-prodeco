@@ -24,6 +24,7 @@ export class MainStore {
   @action
   setLanguage(language: string): void {
     this.language = language;
+    localStorage.setItem('language', this.language);
   }
 }
 
