@@ -25,6 +25,7 @@ export class ProjectDetailsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    window.scroll(0, 0);
     const projectID = this.route.snapshot.paramMap.get('id');
     this.project = mainStore.projects.find(project => project.id === projectID);
     if (!this.project) {
