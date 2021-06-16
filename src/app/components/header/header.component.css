@@ -33,13 +33,13 @@ h2 {
   }
 }
 
-@media (min-width: 806px) {
+@media (min-width: 881px) {
   #indicators-mobile {
     display: none;
   }
 }
 
-@media (max-width: 805px) {
+@media (max-width: 880px) {
   #indicators {
     display: none;
   }
