@@ -36,7 +36,8 @@ export function HttpLoaderFactory(http: HttpClient): any {
     ProjectDetailsComponent,
     HomeComponent,
     NavbarComponent,
-    ArticleDetailsComponent
+    ArticleDetailsComponent,
+    LazyImgDirective
   ],
   imports: [
     BrowserModule,
@@ -53,9 +54,9 @@ export function HttpLoaderFactory(http: HttpClient): any {
     MDBBootstrapModule.forRoot(),
     NgbModule,
     MobxAngularModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
-  providers: [LazyImgDirective],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {

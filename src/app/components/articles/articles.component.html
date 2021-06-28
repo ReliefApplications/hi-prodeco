@@ -5,19 +5,22 @@
   <div *ngFor="let article of articles" class="card col-lg-6 col-md-6 col-sm-12 pointer">
     <div [routerLink]="'/article-details/'+article.id">
       <div>
-        <div id="coverImage" [style.background]="'url(' + article.coverPictureUrl + ')'"
-             [style.backgroundPosition]="'center'" loading="lazy"></div>
-        <span>{{article.country}}</span>
+        <!--        <div id="coverImage" [style.background]="'url(' + article.coverPictureUrl + ')'"-->
+        <!--             [style.backgroundPosition]="'center'" loading="lazy"></div>-->
+        <div class='animated-background' *ngIf="!imagesLoaded.get(article.id)"></div>
+        <img id="coverImage" [style.visibility]="!imagesLoaded.get(article.id) ? 'hidden' : ''"
+             [src]="article.coverPictureUrl" (load)="imageLoaded(article)"
+             alt="" appImg="lazy">
+        <span *ngIf="imagesLoaded.get(article.id)">{{article.country}}</span>
       </div>
 
-      <div class="card-body">
+      <div class="card-body" *ngIf="imagesLoaded.get(article.id)">
         <h4 class="card-title">{{article.name}}</h4>
         <p class="card-text">
           {{article.description}}
         </p>
       </div>
-      <div
-        class="card-footer">{{formatDate(article.date)}}</div>
+      <div *ngIf="imagesLoaded.get(article.id)" class="card-footer">{{formatDate(article.date)}}</div>
     </div>
   </div>
 </div>
