@@ -6,7 +6,7 @@
     <div [routerLink]="'/article-details/'+article.id">
       <div>
         <div id="coverImage" [style.background]="'url(' + article.coverPictureUrl + ')'"
-             [style.backgroundPosition]="'center'"></div>
+             [style.backgroundPosition]="'center'" loading="lazy"></div>
         <span>{{article.country}}</span>
       </div>
 

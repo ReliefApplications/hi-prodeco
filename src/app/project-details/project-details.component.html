@@ -5,7 +5,7 @@
   <div style="position:absolute; top: 40%; left: 0.1rem">
     <img (click)="displayPrev()" class="pointer" width="45" src="./assets/angle-left-b.svg" alt="">
   </div>
-  <img *ngIf="!currentGalleryImage.isVideo" [src]="currentGalleryImage.url">
+  <img *ngIf="!currentGalleryImage.isVideo" [src]="currentGalleryImage.url"  loading="lazy">
   <div style="position:absolute; top: 40%; right: 0.1rem">
     <img (click)="displayNext()" class="pointer" width="45" src="./assets/angle-right-b.svg" alt="">
   </div>
@@ -45,7 +45,7 @@
       <span *ngIf="image.isVideo" id="video-marker">
         <img width="45px" src="/assets/play-circle.svg">
       </span>
-      <img (click)="showInFullScreen(content, image, i)" class="img-fluid cover-img" [src]="image.url">
+      <img (click)="showInFullScreen(content, image, i)" class="img-fluid cover-img" [src]="image.url" loading="lazy">
     </div>
   </div>
 </div>
