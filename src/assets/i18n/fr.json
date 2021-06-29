@@ -3,7 +3,13 @@
     "title": "Exposition virtuelle",
     "subtitle": ""
   },
-  "indicators": {},
+  "indicators": {
+    "treated_patients": "Patients traités",
+    "person_trained": "Personnes formées à l'action humanitaire contre les mines",
+    "social_services": "Personnes ayant bénéficié des services sociaux",
+    "depolluted": "m2 dépollué",
+    "education_sessions": "Personne ayant bénéficié de séances d'éducation aux risques"
+  },
   "projects": {
     "deminage": {
       "title": "Déminage (MAG et HI) au nord du Tchad",
