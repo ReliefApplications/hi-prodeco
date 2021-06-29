@@ -291,11 +291,11 @@ export const Projects: Project[] = [
       })
     ]
   ),
-  new Project('recherche',
-    'Recherche',
-    'Description Recherche',
-    'assets/projects/1/1.jpg',
-    new Date(),
-    []
-  ),
+  // new Project('recherche',
+  //   'Recherche',
+  //   'Description Recherche',
+  //   'assets/projects/1/1.jpg',
+  //   new Date(),
+  //   []
+  // ),
 ];
