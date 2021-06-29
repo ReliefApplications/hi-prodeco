@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Project } from '../../../model/project';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -12,9 +12,18 @@ export class ProjectsComponent implements OnInit {
   @Input()
   projects: Project[] = [];
 
-  constructor(public translate: TranslateService) { }
+  imagesLoaded: Map<string, boolean> = new Map<string, boolean>([]);
 
-  ngOnInit(): void {
+  constructor(public translate: TranslateService) {
   }
 
+  ngOnInit(): void {
+    this.projects.map((project, index) => {
+      this.imagesLoaded.set(project.id, false);
+    });
+  }
+
+  imageLoaded(project: Project): void {
+    this.imagesLoaded.set(project.id, true);
+  }
 }

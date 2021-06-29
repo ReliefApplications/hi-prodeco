@@ -12,13 +12,23 @@ export class ArticlesComponent implements OnInit {
   @Input()
   articles: Article[] = [];
 
-  constructor() { }
+  imagesLoaded: Map<string, boolean> = new Map<string, boolean>([]);
+
+  constructor() {
+  }
 
   ngOnInit(): void {
+    this.articles.map((article, index) => {
+      this.imagesLoaded.set(article.id, false);
+    });
   }
 
   public formatDate(date: Date): string {
     return getDayMonthYear(date);
+  }
+
+  imageLoaded(article: Article): void {
+    this.imagesLoaded.set(article.id, true);
   }
 
 }

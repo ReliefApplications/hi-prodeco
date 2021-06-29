@@ -4,9 +4,12 @@
   </div>
   <div *ngFor="let project of projects" class="card col-xl-2 col-lg col-md-4">
     <a [routerLink]="'/project-details/' + project.id">
-      <img class="card-img-top" [src]="project.coverPictureUrl" alt="">
+      <div class='animated-background' *ngIf="!imagesLoaded.get(project.id)"></div>
+      <img [style.visibility]="!imagesLoaded.get(project.id) ? 'hidden' : ''" class="card-img-top"
+           [src]="project.coverPictureUrl" alt="" (load)="imageLoaded(project)" appImg="lazy">
       <div class="card-body">
-        <h5 class="card-title">{{ 'projects.' + project.id + '.title' | translate}}</h5>
+        <h5 *ngIf="imagesLoaded.get(project.id)"
+            class="card-title">{{ 'projects.' + project.id + '.title' | translate}}</h5>
       </div>
     </a>
   </div>

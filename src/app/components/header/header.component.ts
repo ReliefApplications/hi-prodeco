@@ -19,5 +19,4 @@ export class HeaderComponent implements OnInit {
     const element: any = document.getElementById('video');
     element.muted = 'muted';
   }
-
 }

@@ -18,7 +18,10 @@ export class ProjectDetailsComponent implements OnInit {
   public currentGalleryImage: Gallery;
   public shoGalleryInfo = false;
 
+  public imagesLoaded: Map<string, boolean> = new Map<string, boolean>([]);
+
   private currentGalleryImageIndex: number;
+
 
   constructor(private route: ActivatedRoute, private router: Router,
               public modalService: NgbModal, public translate: TranslateService) {
@@ -31,6 +34,8 @@ export class ProjectDetailsComponent implements OnInit {
     if (!this.project) {
       this.router.navigate(['/home']).then();
     }
+
+    this.project.gallery.forEach((image) => this.imagesLoaded.set(image.url, false));
 
     document.addEventListener('keydown', (event) => {
       const keyName = event.key;
@@ -67,4 +72,7 @@ export class ProjectDetailsComponent implements OnInit {
     this.currentGalleryImage = this.project.gallery[this.currentGalleryImageIndex];
   }
 
+  imageLoaded(url: string): void {
+    this.imagesLoaded.set(url, true);
+  }
 }

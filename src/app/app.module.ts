@@ -19,6 +19,7 @@ import { ArticleDetailsComponent } from './article-details/article-details.compo
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { LazyImgDirective } from '../utils/lazy.directive';
 
 export function HttpLoaderFactory(http: HttpClient): any {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -35,7 +36,8 @@ export function HttpLoaderFactory(http: HttpClient): any {
     ProjectDetailsComponent,
     HomeComponent,
     NavbarComponent,
-    ArticleDetailsComponent
+    ArticleDetailsComponent,
+    LazyImgDirective
   ],
   imports: [
     BrowserModule,
@@ -52,7 +54,7 @@ export function HttpLoaderFactory(http: HttpClient): any {
     MDBBootstrapModule.forRoot(),
     NgbModule,
     MobxAngularModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
