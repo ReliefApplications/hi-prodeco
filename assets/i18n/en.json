@@ -3,7 +3,13 @@
     "title": "Virtual exposition",
     "subtitle": ""
   },
-  "indicators": {},
+  "indicators": {
+    "treated_patients": "Treated patients",
+    "person_trained": "Persons trained on Humanitarian Mine Action",
+    "social_services": "Persons who have benefited of social services",
+    "depolluted": "m2 depolluted",
+    "education_sessions": "Person who have benefited of risk education sessions"
+  },
   "projects": {
     "deminage": {
       "title": "Mine clearance (MAG and HI) in northern Chad",
