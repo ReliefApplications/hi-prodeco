@@ -13,4 +13,5 @@ img {
 a {
   color: black;
   cursor: pointer;
+  margin: 1rem auto
 }

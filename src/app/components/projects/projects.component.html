@@ -3,8 +3,8 @@
     <h2>Volets</h2>
   </div>
   <div *ngFor="let project of projects" class="card col-xl-2 col-lg col-md-6">
-    <a [routerLink]="'/project-details/' + project.id">
-      <div class='animated-background' *ngIf="!imagesLoaded.get(project.id)"></div>
+    <div class='animated-background' *ngIf="!imagesLoaded.get(project.id)"></div>
+    <a [style.height]="!imagesLoaded.get(project.id) ? '0px' : 'auto'" [routerLink]="'/project-details/' + project.id">
       <img [style.visibility]="!imagesLoaded.get(project.id) ? 'hidden' : ''" class="card-img-top"
            [src]="project.coverPictureUrl" alt="" (load)="imageLoaded(project)" appImg="lazy">
       <div class="card-body">
