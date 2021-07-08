@@ -78,5 +78,8 @@
     }
   },
   "projects_section": "Volets",
-  "articles_section": "A propos du project"
+  "articles_section": "A propos du project",
+  "footer": {
+    "support": "Soutenir"
+  }
 }

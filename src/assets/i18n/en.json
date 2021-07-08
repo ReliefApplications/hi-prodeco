@@ -78,5 +78,8 @@
     }
   },
   "projects_section": "Projects",
-  "articles_section": "About the project"
+  "articles_section": "About the project",
+  "footer": {
+    "support": "Support"
+  }
 }
