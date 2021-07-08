@@ -2,7 +2,7 @@
   <div class="col-12">
     <h2>Volets</h2>
   </div>
-  <div *ngFor="let project of projects" class="card col-xl-2 col-lg col-md-4">
+  <div *ngFor="let project of projects" class="card col-xl-2 col-lg col-md-6">
     <a [routerLink]="'/project-details/' + project.id">
       <div class='animated-background' *ngIf="!imagesLoaded.get(project.id)"></div>
       <img [style.visibility]="!imagesLoaded.get(project.id) ? 'hidden' : ''" class="card-img-top"
