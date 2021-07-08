@@ -8,7 +8,7 @@
     "person_trained": "Persons trained on Humanitarian Mine Action",
     "social_services": "Persons who have benefited of social services",
     "depolluted": "m2 depolluted",
-    "education_sessions": "Person who have benefited of risk education sessions"
+    "education_sessions": "Persons who have benefited of risk education sessions"
   },
   "projects": {
     "deminage": {
@@ -78,5 +78,8 @@
     }
   },
   "projects_section": "Projects",
-  "articles_section": "About the project"
+  "articles_section": "About the project",
+  "footer": {
+    "support": "Support"
+  }
 }
