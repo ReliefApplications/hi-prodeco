@@ -16,6 +16,8 @@ export class HomeComponent implements OnInit {
   public articles: Article[];
   public indicators: Indicator[];
 
+  public videoURL = '';
+
   constructor() {
     this.projects = mainStore.projects;
     this.articles = mainStore.articles;
@@ -25,4 +27,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  loadVideo(): void {
+    this.videoURL = 'assets/cover_video.mp4';
+  }
 }
