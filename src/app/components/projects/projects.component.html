@@ -4,8 +4,10 @@
   </div>
   <div *ngFor="let project of projects" class="card col-xl-2 col-lg col-md-6">
     <div class='animated-background' *ngIf="!imagesLoaded.get(project.id)"></div>
-    <a [style.height]="!imagesLoaded.get(project.id) ? '0px' : 'auto'" [routerLink]="'/project-details/' + project.id">
-      <img [@fadeIn]="imagesLoaded.get(project.id)" [style.visibility]="!imagesLoaded.get(project.id) ? 'hidden' : ''" class="card-img-top"
+    <a (mouseenter)="mouseEnter(project)"
+       [style.height]="!imagesLoaded.get(project.id) ? '0px' : 'auto'" [routerLink]="'/project-details/' + project.id">
+      <img [@fadeIn]="imagesLoaded.get(project.id)" [@pulse]="imagesHover.get(project.id) === true"
+           [style.visibility]="!imagesLoaded.get(project.id) ? 'hidden' : ''" class="card-img-top"
            [src]="project.coverPictureUrl" alt="" (load)="imageLoaded(project)" appImg="lazy">
       <div class="card-body">
         <h5 *ngIf="imagesLoaded.get(project.id)"

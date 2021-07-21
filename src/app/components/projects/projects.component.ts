@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Project } from '../../../model/project';
 import { TranslateService } from '@ngx-translate/core';
-import { fadeInAnimation, fadeInOnEnterAnimation, fadeOutOnLeaveAnimation, rubberBandAnimation } from 'angular-animations';
+import { fadeInAnimation, fadeInOnEnterAnimation, fadeOutOnLeaveAnimation, pulseAnimation, rubberBandAnimation } from 'angular-animations';
 
 @Component({
   selector: 'app-projects',
@@ -10,7 +10,8 @@ import { fadeInAnimation, fadeInOnEnterAnimation, fadeOutOnLeaveAnimation, rubbe
   animations: [
     fadeInOnEnterAnimation(),
     fadeOutOnLeaveAnimation(),
-    fadeInAnimation()
+    fadeInAnimation(),
+    pulseAnimation()
   ]
 })
 export class ProjectsComponent implements OnInit {
@@ -22,6 +23,7 @@ export class ProjectsComponent implements OnInit {
   allImagesLoaded: EventEmitter<void> = new EventEmitter<void>();
 
   imagesLoaded: Map<string, boolean> = new Map<string, boolean>([]);
+  imagesHover: Map<string, boolean> = new Map<string, boolean>([]);
 
   constructor(public translate: TranslateService) {
   }
@@ -40,5 +42,9 @@ export class ProjectsComponent implements OnInit {
       }
     }
     this.allImagesLoaded.emit();
+  }
+
+  mouseEnter(project: Project): void {
+    this.imagesHover.set(project.id, !!this.imagesHover.get(project.id) ? !this.imagesHover.get(project.id) : true);
   }
 }
