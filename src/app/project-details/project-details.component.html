@@ -41,12 +41,14 @@
     <h5>Crédits et remerciements - Copyright</h5>
   </div>
   <div class="row justify-content-center">
-    <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let image of project.gallery; index as i">
+    <div [@fadeInOnEnter] [@fadeOutOnLeave] class="col-lg-4 col-md-6 col-sm-12"
+         *ngFor="let image of project.gallery; index as i">
       <div class='animated-background' *ngIf="!imagesLoaded.get(image.url)"></div>
       <span *ngIf="image.isVideo" id="video-marker">
         <img width="45px" src="/assets/play-circle.svg">
       </span>
-      <img (load)="imageLoaded(image.url)" (click)="showInFullScreen(content, image, i)" class="img-fluid cover-img"
+      <img [@fadeIn]="imagesLoaded.get(image.url)" [style.height]="!imagesLoaded.get(image.url) ? '0px' : 'auto'"
+           (load)="imageLoaded(image.url)" (click)="showInFullScreen(content, image, i)" class="img-fluid cover-img"
            [src]="image.url" appImg="lazy" [style.visibility]="!imagesLoaded.get(image.url) ? 'hidden' : ''">
     </div>
   </div>

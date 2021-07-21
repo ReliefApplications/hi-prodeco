@@ -5,11 +5,17 @@ import { Project } from '../../model/project';
 import { Gallery } from '../../model/gallery';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateService } from '@ngx-translate/core';
+import { fadeInAnimation, fadeInOnEnterAnimation, fadeOutOnLeaveAnimation, pulseAnimation } from 'angular-animations';
 
 @Component({
   selector: 'app-project-details',
   templateUrl: './project-details.component.html',
-  styleUrls: ['./project-details.component.css']
+  styleUrls: ['./project-details.component.css'],
+  animations: [
+    fadeInOnEnterAnimation(),
+    fadeOutOnLeaveAnimation(),
+    fadeInAnimation()
+  ]
 })
 export class ProjectDetailsComponent implements OnInit {
 
