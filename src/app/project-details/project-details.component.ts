@@ -5,7 +5,13 @@ import { Project } from '../../model/project';
 import { Gallery } from '../../model/gallery';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateService } from '@ngx-translate/core';
-import { fadeInAnimation, fadeInOnEnterAnimation, fadeOutOnLeaveAnimation, pulseAnimation } from 'angular-animations';
+import {
+  fadeInAnimation,
+  fadeInLeftAnimation,
+  fadeInOnEnterAnimation,
+  fadeInRightAnimation, fadeOutAnimation,
+  fadeOutOnLeaveAnimation
+} from 'angular-animations';
 
 @Component({
   selector: 'app-project-details',
@@ -14,7 +20,10 @@ import { fadeInAnimation, fadeInOnEnterAnimation, fadeOutOnLeaveAnimation, pulse
   animations: [
     fadeInOnEnterAnimation(),
     fadeOutOnLeaveAnimation(),
-    fadeInAnimation()
+    fadeInAnimation(),
+    fadeOutAnimation(),
+    fadeInRightAnimation(),
+    fadeInLeftAnimation()
   ]
 })
 export class ProjectDetailsComponent implements OnInit {
@@ -28,6 +37,9 @@ export class ProjectDetailsComponent implements OnInit {
 
   private currentGalleryImageIndex: number;
 
+  public loading = true;
+  public goPrevTransition = false;
+  public goNextTransition = false;
 
   constructor(private route: ActivatedRoute, private router: Router,
               public modalService: NgbModal, public translate: TranslateService) {
@@ -56,6 +68,7 @@ export class ProjectDetailsComponent implements OnInit {
   }
 
   showInFullScreen(content: any, image: Gallery, index: number): void {
+    this.loading = true;
     this.currentGalleryImage = image;
     this.currentGalleryImageIndex = index;
     this.modalService.open(content, {centered: true, size: 'xl'});
@@ -67,12 +80,24 @@ export class ProjectDetailsComponent implements OnInit {
   }
 
   displayPrev(): void {
+    this.goPrevTransition = false;
+    setTimeout(() => {
+      this.goPrevTransition = true;
+    }, 1);
+
+    this.loading = true;
     this.currentGalleryImageIndex = this.currentGalleryImageIndex - 1 < 0
       ? this.project.gallery.length - 1 : this.currentGalleryImageIndex - 1;
     this.currentGalleryImage = this.project.gallery[this.currentGalleryImageIndex];
   }
 
   displayNext(): void {
+    this.goNextTransition = false;
+    setTimeout(() => {
+      this.goNextTransition = true;
+    }, 1);
+
+    this.loading = true;
     this.currentGalleryImageIndex = this.currentGalleryImageIndex + 1 > this.project.gallery.length - 1
       ? 0 : this.currentGalleryImageIndex + 1;
     this.currentGalleryImage = this.project.gallery[this.currentGalleryImageIndex];
@@ -80,5 +105,9 @@ export class ProjectDetailsComponent implements OnInit {
 
   imageLoaded(url: string): void {
     this.imagesLoaded.set(url, true);
+  }
+
+  imageModalLoaded(url: string): void {
+    this.loading = false;
   }
 }

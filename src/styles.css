@@ -22,11 +22,11 @@ html, body {
 }
 
 
-@keyframes placeHolderShimmer{
-  0%{
+@keyframes placeHolderShimmer {
+  0% {
     background-position: -468px 0
   }
-  100%{
+  100% {
     background-position: 468px 0
   }
 }
@@ -43,4 +43,9 @@ html, body {
   border-radius: 1rem;
   height: 180px;
   position: relative;
+}
+
+.modal-content {
+  background-color: #fff0;
+  border: none;
 }

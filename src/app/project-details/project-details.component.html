@@ -1,22 +1,51 @@
 <ng-template #content let-modal>
-  <div style="position:absolute; top: 0.5rem; right: 0.5rem">
+
+  <div *ngIf="!loading" style="position:absolute; top: 0.5rem; right: 0.5rem">
     <img class="pointer" (click)="onCloseModal()" width="25" src="./assets/multiply.svg" alt="">
   </div>
-  <div style="position:absolute; top: 40%; left: 0.1rem">
+  <div *ngIf="!loading" style="position:absolute; top: 40%; left: 0.1rem">
     <img (click)="displayPrev()" class="pointer" width="45" src="./assets/angle-left-b.svg" alt="">
   </div>
-  <img *ngIf="!currentGalleryImage.isVideo" [src]="currentGalleryImage.url" appImg="lazy">
-  <div style="position:absolute; top: 40%; right: 0.1rem">
+  <div *ngIf="!loading" style="position:absolute; top: 40%; right: 0.1rem">
     <img (click)="displayNext()" class="pointer" width="45" src="./assets/angle-right-b.svg" alt="">
   </div>
-  <div class="pointer" (click)="shoGalleryInfo = !shoGalleryInfo" [style]="shoGalleryInfo ? 'border: solid 1px' : ''"
-       id="show-info">
-    <img width="25"
-         [src]="shoGalleryInfo ? './assets/image.svg' : './assets/align-left-justify.svg'" alt="">
+  <div *ngIf="loading" style="height: 500px;">
+    <div style="margin-top: 14rem" class="d-flex justify-content-center">
+      <div class="spinner-grow text-light" role="status">
+        <span class="sr-only"></span>
+      </div>
+      <div class="spinner-grow text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-light" role="status">
+        <span class="sr-only"></span>
+      </div>
+    </div>
+  </div>
+  <img [@fadeInRight]="goNextTransition === true"
+       [@fadeInLeft]="goPrevTransition === true"
+       *ngIf="!currentGalleryImage.isVideo"
+       [style.height]="loading ? '0px' : 'auto'" [src]="currentGalleryImage.url"
+       (load)="imageModalLoaded(currentGalleryImage.url)" appImg="lazy">
+
+  <div [@fadeOut]="goPrevTransition === true"
+       [@fadeIn]="goNextTransition === true">
+    <div class="pointer"
+         (click)="shoGalleryInfo = !shoGalleryInfo"
+         [style]="shoGalleryInfo ? 'border: solid 1px' : ''"
+         *ngIf="!loading"
+         id="show-info">
+      <img width="25"
+           [src]="shoGalleryInfo ? './assets/image.svg' : './assets/align-left-justify.svg'" alt="">
+    </div>
   </div>
 
-  <div *ngIf="shoGalleryInfo" class="modal-footer">
-    <div class="btn-block ml-1">
+  <div [@fadeInRight]="goNextTransition === true"
+       [@fadeInLeft]="goPrevTransition === true"
+       *ngIf="shoGalleryInfo"
+       [style.display]="loading ? 'none' : '' "
+       class="modal-footer">
+    <div [@fadeIn]="shoGalleryInfo === true" class="btn-block ml-1">
       <p>{{'projects.' + project.id + '.gallery.' + currentGalleryImage.description | translate}}</p>
       <p>Author: {{currentGalleryImage.author}}</p>
     </div>

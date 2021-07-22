@@ -55,6 +55,14 @@ a {
   top: 0.5rem
 }
 
+.spinner-grow {
+  margin: 0.4rem;
+}
+
+.modal-footer {
+  background-color: white;
+}
+
 @media (max-width: 701px) {
   h1 {
     margin-left: 3rem;
