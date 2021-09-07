@@ -12,3 +12,7 @@ a {
   text-decoration: none;
   color: white;
 }
+
+img {
+  margin: 2rem 0;
+}
