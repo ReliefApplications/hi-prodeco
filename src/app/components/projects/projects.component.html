@@ -11,7 +11,7 @@
            [src]="project.coverPictureUrl" alt="" (load)="imageLoaded(project)" appImg="lazy">
       <div class="card-body">
         <h5 *ngIf="imagesLoaded.get(project.id)"
-            class="card-title">{{ 'projects.' + project.id + '.title' | translate}}</h5>
+            class="card-title">{{ project.name | translate}}</h5>
       </div>
     </a>
   </div>

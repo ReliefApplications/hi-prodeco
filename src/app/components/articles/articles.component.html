@@ -26,10 +26,10 @@
         </p>
       </div>
       <div *ngIf="imagesLoaded.get(article.id)" class="card-footer pointer">{{formatDate(article.date)}}</div>
-      <img [style.visibility]="'hidden'"
-           [src]="article.coverPictureUrl" (load)="imageLoaded(article)"
-           alt="" appImg="lazy">
     </div>
+    <img [style.visibility]="'hidden'"
+         [src]="article.coverPictureUrl" (load)="imageLoaded(article)"
+         alt="" appImg="lazy">
   </div>
 </div>
 
