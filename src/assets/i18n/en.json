@@ -1,7 +1,7 @@
 {
   "header": {
     "title": "Virtual exposition",
-    "subtitle": ""
+    "subtitle": "Support for demining, development and social protection of vulnerable people"
   },
   "indicators": {
     "treated_patients": "Treated patients",
@@ -100,11 +100,16 @@
           "fada_17": "HCND Coordinator, during the HCND's online participation in the 18th Meeting of States Parties, in their office in N’Djamena, November 17, 2020."
         }
       }
-    }
+    },
+    "section_title": "Projects"
   },
   "projects_section": "Projects",
-  "articles_section": "About the project",
   "footer": {
-    "support": "Support"
+    "support": "Support",
+    "privacy_policy": "Privacy policy",
+    "terms_of_use": "Terms of use"
+  },
+  "articles": {
+    "section_title": "About the projects"
   }
 }

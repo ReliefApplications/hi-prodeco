@@ -24,4 +24,8 @@ span {
   #navbar-items {
     width: 0;
   }
+
+  #nav-content {
+    margin-right: 0;
+  }
 }

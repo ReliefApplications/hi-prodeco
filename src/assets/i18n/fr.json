@@ -1,7 +1,7 @@
 {
   "header": {
     "title": "Exposition virtuelle",
-    "subtitle": ""
+    "subtitle": "Appui au déminage, au développement et à la protection sociale des personnes vulnérables"
   },
   "indicators": {
     "treated_patients": "Patients traités",
@@ -100,11 +100,16 @@
           "fada_17": "Coordonnateur du HCND, lors de la participation en ligne du HCND à la 18ème Réunion des Etats Partis, dans leur bureau à N’Djamena, le 17 novembre 2020."
         }
       }
-    }
+    },
+    "section_title": "Volets"
   },
   "projects_section": "Volets",
-  "articles_section": "A propos du project",
   "footer": {
-    "support": "Soutenir"
+    "support": "Soutenir",
+    "privacy_policy": "Politique de confidentialité",
+    "terms_of_use": "Conditions d'utilisation"
+  },
+  "articles": {
+    "section_title": "A propos du projets"
   }
 }
