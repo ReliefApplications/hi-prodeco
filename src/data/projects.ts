@@ -50,26 +50,38 @@ export const Projects: Project[] = [
       }),
       new Gallery({
         url: 'assets/projects/deminage/6_HI-Depart_des_demineurs_HI_pour_le_terrain 3.jpg',
-        author: 'Djérabé Ndigngar'}),
+        author: 'Djérabé Ndigngar',
+        description: 'djerabe.fada_6'
+      }),
       new Gallery({
         url: 'assets/projects/deminage/13_HI-Rassemblement_pour_des_consignes_de_securite.jpg',
-        author: 'Djérabé Ndigngar'}),
+        author: 'Djérabé Ndigngar',
+        description: 'djerabe.fada_13'
+      }),
       new Gallery({
         url: 'assets/projects/deminage/22_HI-Jason-Zone_de_destruction_des_mines.jpg',
-        author: 'Djérabé Ndigngar'}),
+        author: 'Djérabé Ndigngar',
+        description: 'djerabe.fada_22'
+      }),
       new Gallery({
         url: 'assets/projects/deminage/32_HI-Retour_des_démineurs_HI_de_la_zone_de_deminage.jpg',
-        author: 'Djérabé Ndigngar'}),
+        author: 'Djérabé Ndigngar',
+        description: 'djerabe.fada_32'
+      }),
       new Gallery({
         url: 'assets/projects/deminage/41_MAG-Programme_deminage-NGOM_ADRIEN_TFM-TL.jpg',
-        author: 'Djérabé Ndigngar'}),
+        author: 'Djérabé Ndigngar',
+        description: 'djerabe.fada_41'
+      }),
       new Gallery({
         url: 'assets/projects/deminage/49_Mag_EQUIPE _TERRAIN _MAG _ENNEDI _OUEST _SITE HARIGNALAI.CR2.jpg',
-        author: 'Djérabé Ndigngar'
+        author: 'Djérabé Ndigngar',
+        description: 'djerabe.fada_49'
       }),
       new Gallery({
         url: 'assets/projects/deminage/51_Activite_MAG-Equipe_Mag_sur_le_terrain.jpg',
-        author: 'Djérabé Ndigngar'
+        author: 'Djérabé Ndigngar',
+        description: 'djerabe.fada_51'
       }),
       new Gallery({
         url: 'assets/projects/deminage/deminage_MAG_Fada-13.jpg',
