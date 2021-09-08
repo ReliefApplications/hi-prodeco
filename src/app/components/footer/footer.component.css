@@ -1,7 +1,7 @@
 #container {
   color: white;
   background: #2582cd;
-  padding: 4rem 8rem;
+  padding: 4rem 2rem;
 }
 
 h4 {
@@ -14,5 +14,6 @@ a {
 }
 
 img {
-  margin: 2rem 0;
+  margin: 2rem 0.5rem;
 }
+
