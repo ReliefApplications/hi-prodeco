@@ -10,19 +10,25 @@ import { TranslateService } from '@ngx-translate/core';
 export class HeaderComponent implements OnInit {
 
   @ViewChild('video') videoPlayer: ElementRef;
+  @ViewChild('image') image: ElementRef;
 
   @Input()
   indicators: Indicator[] = [];
 
+  private connection;
+
   @Input()
   set loadVideo(url) {
     if (!!this.videoPlayer) {
-      this.videoPlayer.nativeElement.src = url;
-      this.videoPlayer.nativeElement.muted = 'muted';
+      if (!this.connection.effectiveType.match(/[2-3]/)) {
+        this.videoPlayer.nativeElement.src = url;
+        this.videoPlayer.nativeElement.muted = 'muted';
+      }
     }
   }
 
   constructor(public translate: TranslateService) {
+    this.connection = (navigator as any).connection;
   }
 
   ngOnInit(): void {
