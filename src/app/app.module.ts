@@ -21,6 +21,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LazyImgDirective } from '../utils/lazy.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CountUpModule } from 'ngx-countup';
 
 export function HttpLoaderFactory(http: HttpClient): any {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -56,7 +57,8 @@ export function HttpLoaderFactory(http: HttpClient): any {
     NgbModule,
     MobxAngularModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CountUpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
