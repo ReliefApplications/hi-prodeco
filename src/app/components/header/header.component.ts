@@ -10,7 +10,6 @@ import { TranslateService } from '@ngx-translate/core';
 export class HeaderComponent implements OnInit {
 
   @ViewChild('video') videoPlayer: ElementRef;
-  @ViewChild('image') image: ElementRef;
 
   @Input()
   indicators: Indicator[] = [];

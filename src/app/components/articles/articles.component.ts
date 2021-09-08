@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { Article } from '../../../model/article';
 import { getDayMonthYear } from '../../../utils/date-utils';
 import { fadeInAnimation, fadeInOnEnterAnimation, fadeOutOnLeaveAnimation, pulseAnimation } from 'angular-animations';
@@ -37,11 +37,11 @@ export class ArticlesComponent implements OnInit {
 
   imageLoaded(article: Article): void {
     this.imagesLoaded.set(article.id, true);
+    document.getElementById(article.id).style.display = 'none';
   }
 
   mouseEnter(article: Article): void {
     this.imagesHover.set(article.id, !!this.imagesHover.get(article.id) ? !this.imagesHover.get(article.id) : true);
-    console.log('**', this.imagesLoaded);
   }
 
 }

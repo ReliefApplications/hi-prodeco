@@ -8,7 +8,7 @@
       <div class='animated-background' *ngIf="!imagesLoaded.get(article.id); else displayImages"></div>
       <div>
         <ng-template #displayImages>
-          <!--        TODO: if we want to add hover animations to article items  -->
+          <!-- TODO: if we want to add hover animations to article items  -->
           <!--               [@pulse]="imagesHover.get(article.id) === true"-->
           <!--               (mouseenter)="mouseEnter(article)"-->
           <div class="pointer" [@fadeIn]="imagesLoaded.get(article.id)"
@@ -27,7 +27,7 @@
       </div>
       <div *ngIf="imagesLoaded.get(article.id)" class="card-footer pointer">{{formatDate(article.date)}}</div>
     </div>
-    <img [style.visibility]="'hidden'"
+    <img [id]="article.id" [style.visibility]="'hidden'"
          [src]="article.coverPictureUrl" (load)="imageLoaded(article)"
          alt="" appImg="lazy">
   </div>
