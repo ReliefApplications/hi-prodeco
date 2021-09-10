@@ -11,12 +11,12 @@ export class HeaderComponent implements OnInit {
 
   @ViewChild('video') videoPlayer: ElementRef;
 
-  private connection;
+  private readonly connection;
 
   @Input()
   set loadVideo(url) {
     if (!!this.videoPlayer) {
-      if (!this.connection.effectiveType.match(/[2-3]/)) {
+      if (!this.connection || !this.connection.effectiveType.match(/[2-3]/)) {
         this.videoPlayer.nativeElement.src = url;
         this.videoPlayer.nativeElement.muted = 'muted';
       }
