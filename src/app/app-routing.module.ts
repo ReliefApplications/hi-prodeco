@@ -7,9 +7,8 @@ import { ArticleDetailsComponent } from './article-details/article-details.compo
 const routes: Routes = [
   {path: 'project-details/:id', component: ProjectDetailsComponent},
   {path: 'article-details/:id', component: ArticleDetailsComponent},
-  {path: 'home', component: HomeComponent},
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: '**', redirectTo: '/home', pathMatch: 'full'}
+  {path: '', component: HomeComponent},
+  {path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 
 @NgModule({
