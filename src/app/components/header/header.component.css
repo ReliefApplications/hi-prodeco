@@ -12,25 +12,16 @@ video {
   width: 100%;
 }
 
-.col-12 {
-  padding: 0;
-}
+/*.col-12 {*/
+/*  padding: 0;*/
+/*}*/
 
-h4 {
-  margin-bottom: 12rem;
-}
+/*img {*/
+/*  width: 100%;*/
+/*}*/
 
-h2 {
-  font-size: 64px;
-  margin-bottom: 1rem;
-}
-
-img {
-  width: 100%;
-}
-
-@media (max-width: 1159px) {
-  h4, h2 {
-    display: none;
-  }
-}
+/*@media (max-width: 1159px) {*/
+/*  h4, h2 {*/
+/*    display: none;*/
+/*  }*/
+/*}*/
