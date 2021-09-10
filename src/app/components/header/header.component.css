@@ -4,7 +4,7 @@
 }
 
 video {
-  background-image: url('../../../assets/projects/deminage/6_HI-Depart_des_demineurs_HI_pour_le_terrain 3.jpg');
+  background-image: url('src/assets/projects/deminage/6_HI-Depart_des_demineurs_HI_pour_le_terrain 3.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -16,7 +16,7 @@ video {
   padding: 0;
 }
 
-h4  {
+h4 {
   margin-bottom: 12rem;
 }
 
