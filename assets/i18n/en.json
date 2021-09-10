@@ -101,7 +101,8 @@
         }
       }
     },
-    "section_title": "Projects"
+    "section_title": "Projects",
+    "author": "Author"
   },
   "projects_section": "Projects",
   "footer": {
