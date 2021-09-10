@@ -11,9 +11,6 @@ export class HeaderComponent implements OnInit {
 
   @ViewChild('video') videoPlayer: ElementRef;
 
-  @Input()
-  indicators: Indicator[] = [];
-
   private connection;
 
   @Input()

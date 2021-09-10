@@ -1,7 +1,8 @@
 <h1>PRODECO</h1>
 <app-navbar></app-navbar>
-<app-header [indicators]="indicators" [loadVideo]="videoURL"></app-header>
+<app-header [loadVideo]="videoURL"></app-header>
 <div class="content-wrapper">
+  <app-indicators [indicators]="indicators"></app-indicators>
   <app-projects [projects]="projects" (allImagesLoaded)="loadVideo()"></app-projects>
   <app-articles [articles]="articles"></app-articles>
 </div>

@@ -1,0 +1,6 @@
+<div *ngIf="indicators.length > 0" class="row justify-content-center">
+  <div class="col indicator" *ngFor="let indicator of indicators">
+    <h1 [countUp]="indicator.data">0</h1>
+    <h5>{{indicator.text | translate}}</h5>
+  </div>
+</div>

@@ -19,22 +19,11 @@
             <h2>{{ 'header.title' | translate }}</h2>
             <h4>{{ 'header.subtitle' | translate }}</h4>
           </div>
-          <div id="indicators" class="row justify-content-center">
-            <div class="col" *ngFor="let indicator of indicators">
-              <app-indicator [indicator]="indicator"></app-indicator>
-            </div>
-          </div>
         </div>
         <!--Caption-->
       </mdb-carousel-item>
       <!--/slide-->
     </mdb-carousel>
     <!--Carousel Wrapper-->
-
-  </div>
-</div>
-<div id="indicators-mobile" class="row justify-content-center">
-  <div class="col-sm-12 col-md-6 text-center" *ngFor="let indicator of indicators">
-    <app-indicator [indicator]="indicator"></app-indicator>
   </div>
 </div>

@@ -10,7 +10,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ArticlesComponent } from './components/articles/articles.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { IndicatorComponent } from './components/header/indicator/indicator.component';
+import { IndicatorsComponent } from './components/indicators/indicators.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { HomeComponent } from './home/home.component';
@@ -34,7 +34,7 @@ export function HttpLoaderFactory(http: HttpClient): any {
     ProjectsComponent,
     ArticlesComponent,
     FooterComponent,
-    IndicatorComponent,
+    IndicatorsComponent,
     ProjectDetailsComponent,
     HomeComponent,
     NavbarComponent,
