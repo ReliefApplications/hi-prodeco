@@ -68,7 +68,7 @@ export class ProjectDetailsComponent implements OnInit {
   }
 
   showInFullScreen(content: any, image: Gallery, index: number): void {
-    this.loading = true;
+    this.loading = !image.isVideo;
     this.currentGalleryImage = image;
     this.currentGalleryImageIndex = index;
     this.modalService.open(content, {centered: true, size: 'xl'});
@@ -85,10 +85,10 @@ export class ProjectDetailsComponent implements OnInit {
       this.goPrevTransition = true;
     }, 1);
 
-    this.loading = true;
     this.currentGalleryImageIndex = this.currentGalleryImageIndex - 1 < 0
       ? this.project.gallery.length - 1 : this.currentGalleryImageIndex - 1;
     this.currentGalleryImage = this.project.gallery[this.currentGalleryImageIndex];
+    this.loading = !this.currentGalleryImage.isVideo;
   }
 
   displayNext(): void {
@@ -97,10 +97,10 @@ export class ProjectDetailsComponent implements OnInit {
       this.goNextTransition = true;
     }, 1);
 
-    this.loading = true;
     this.currentGalleryImageIndex = this.currentGalleryImageIndex + 1 > this.project.gallery.length - 1
       ? 0 : this.currentGalleryImageIndex + 1;
     this.currentGalleryImage = this.project.gallery[this.currentGalleryImageIndex];
+    this.loading = !this.currentGalleryImage.isVideo;
   }
 
   imageLoaded(url: string): void {

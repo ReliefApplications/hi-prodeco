@@ -4,7 +4,7 @@ import { Gallery } from '../model/gallery';
 export const Projects: Project[] = [
   new Project('deminage',
     'projects.deminage.title',
-    'Description Déminage (MAG et HI) au nord du Tchad',
+    'projects.deminage.description',
     'assets/projects/deminage/deminage_MAG_Fada-13.jpg',
     new Date(),
     [
@@ -16,7 +16,13 @@ export const Projects: Project[] = [
       new Gallery({
         url: 'assets/projects/deminage/deminage_HI_Fada-4.jpg',
         author: 'Gwenn Dubourthoumieu',
-        description: 'gwenn.fada_4'
+        description: 'gwenn.fada_4',
+      }),
+      new Gallery({
+        url: 'assets/projects/deminage/deminage_MAG_Fada-3_video.jpg',
+        author: '',
+        isVideo: true,
+        videoURL: 'projects.deminage.videos.video1'
       }),
       new Gallery({
         url: 'assets/projects/deminage/deminage_HI_Fada-5.jpg',
@@ -93,11 +99,12 @@ export const Projects: Project[] = [
         author: 'Gwenn Dubourthoumieu',
         description: 'gwenn.fada_1'
       }),
-    ]
+    ],
+    ['projects.deminage.p1', 'projects.deminage.p2']
   ),
   new Project('assistance',
     'projects.assistance.title',
-    'Description Assistance aux victimes',
+    'projects.assistance.description',
     'assets/projects/assistance_aux_victimes/PRODECO_assistance_aux_victimes_Fada-2.jpg',
     new Date(),
     [
@@ -115,6 +122,12 @@ export const Projects: Project[] = [
         url: 'assets/projects/assistance_aux_victimes/PRODECO_assistance_aux_victimes_NDjamena-2.jpg',
         author: 'Gwenn Dubourthoumieu',
         description: 'gwenn.victimes_ndjamena_2_3'
+      }),
+      new Gallery({
+        url: 'assets/projects/assistance_aux_victimes/PRODECO_assistance_aux_victimes_NDjamena-8_video.jpg',
+        author: '',
+        isVideo: true,
+        videoURL: 'projects.assistance.videos.video1'
       }),
       new Gallery({
         url: 'assets/projects/assistance_aux_victimes/PRODECO_assistance_aux_victimes_NDjamena-5.jpg',
@@ -166,11 +179,11 @@ export const Projects: Project[] = [
         author: 'Debora Edith Ngaba',
         description: 'debora.fada_1'
       })
-    ]),
+    ], ['projects.assistance.p0']),
 
   new Project('insertion',
     'projects.insertion.title',
-    'Description Insertion socio-économiques',
+    'projects.insertion.description',
     'assets/projects/insertion_socio_economique/PRODECO_insertion_socio-economique_portrait_beneficaire_Fada-6.jpg',
     new Date(),
     [
@@ -188,6 +201,12 @@ export const Projects: Project[] = [
         url: 'assets/projects/insertion_socio_economique/8. Activité HI - Programme ISE - Aché - Commerçante au marché fada-.jpg',
         author: 'Djérabé Ndigngar',
         description: 'djerabe.fada_8'
+      }),
+      new Gallery({
+        url: 'assets/projects/insertion_socio_economique/PRODECO_insertion socio-économique_portrait bénéficaire_Fada-3.jpg',
+        author: '',
+        isVideo: true,
+        videoURL: 'projects.insertion.videos.video1'
       }),
       new Gallery({
         url: 'assets/projects/insertion_socio_economique/16. Activité HI - Programme ISE - Recensement d_un bénéficiaire du programme ISE 1.jpg',
@@ -244,11 +263,11 @@ export const Projects: Project[] = [
         author: 'Gwenn Dubourthoumieu',
         description: 'gwenn.beneficiaire_fada_6'
       })
-    ]
+    ], ['projects.insertion.p0', 'projects.insertion.p1', 'projects.insertion.p2', 'projects.insertion.p3', 'projects.insertion.p4']
   ),
   new Project('institutionnel',
     'projects.institutionnel.title',
-    'Description Appui institutionnel',
+    'projects.institutionnel.description',
     'assets/projects/appui_institutionnel/17. PRODECO_renforcement institutionnel_NDjamena-16.jpg',
     new Date(),
     [
@@ -283,6 +302,12 @@ export const Projects: Project[] = [
         description: 'gwenn.ndjamena_1_2'
       }),
       new Gallery({
+        url: 'assets/projects/appui_institutionnel/PRODECO_renforcement institutionnel_NDjamena-2_video.jpg',
+        author: '',
+        isVideo: true,
+        videoURL: 'projects.institutionnel.videos.video1'
+      }),
+      new Gallery({
         url: 'assets/projects/appui_institutionnel/PRODECO_renforcement institutionnel_NDjamena-8.jpg',
         author: 'Gwenn Dubourthoumieu',
         description: 'gwenn.ndjamena_8_9_11_14'
@@ -312,7 +337,7 @@ export const Projects: Project[] = [
         author: 'Djérabé Ndigngar',
         description: 'djerabe.fada_17'
       })
-    ]
+    ], ['projects.institutionnel.p0']
   ),
   // new Project('recherche',
   //   'Recherche',

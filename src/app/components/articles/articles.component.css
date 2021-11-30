@@ -21,3 +21,11 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+iframe {
+  border-radius: 0.7rem;
+  border: none;
+  max-width: 1140px;
+  height: 512px;
+  width: 100%;
+}

@@ -9,16 +9,27 @@ app-navbar {
   right: 0.1rem;
 }
 
-h1 {
+#title {
   color: white;
   position: absolute;
   z-index: 99;
-  top: 3.5rem;
-  left: 8rem;
-  background: rgba(0, 0, 0, 0.4);
+  top: 3rem;
+  left: 2.5rem;
+  /*background: rgba(0, 0, 0, 0.4);*/
   padding: 0.2rem 0.6rem;
   border-radius: 0.5rem;
 }
+
+/*h1 {*/
+/*  color: white;*/
+/*  position: absolute;*/
+/*  z-index: 99;*/
+/*  top: 3.5rem;*/
+/*  left: 8rem;*/
+/*  background: rgba(0, 0, 0, 0.4);*/
+/*  padding: 0.2rem 0.6rem;*/
+/*  border-radius: 0.5rem;*/
+/*}*/
 
 h4 {
   margin-bottom: 6rem;
@@ -33,5 +44,8 @@ h2 {
 @media (max-width: 601px) {
   .content-wrapper {
     margin: 4rem 1rem;
+  }
+  #title {
+    display: none;
   }
 }

@@ -12,8 +12,8 @@
   },
   "projects": {
     "deminage": {
-      "title": "Déminage (MAG et HI) au nord du Tchad",
-      "description": "",
+      "title": "Déminage / Dépollution",
+      "description": "Pilier principal du projet, ces interventions ont permis de dépolluer plusieurs zone dangereuses à travers des destructions de Restes explosifs de Guerre (REG), mines anti-char et mines anti-personnel notamment dans la province de Borkou et de l’Ennedi Ouest permettant un nettoyage de mines et Restes Explosifs de Guerres (REG) des zones dangereuses jadis minées.",
       "gallery": {
         "gwenn": {
           "fada_3": "Un démineur de Humanité & Inclusion travaille sur un chantier de dépollution, contaminé par des restes explosifs de guerre, près du village de Delbo, à 37 km de Fada, le 2 décembre 2020.",
@@ -35,11 +35,16 @@
           "fada_49": "Equipe de démineurs de MAG travaillant sur le site de dépollution de Harignala, à 17 km de Fada, le 25 novembre 2020.",
           "fada_51": "Equipe de démineurs de MAG en pleine préparation avant le commencement des opérations sur le site de dépollution de Harignala, à 17 km de Fada, le 25 novembre 2020."
         }
+      },
+      "p1": "17 500 personnes sensibilisées aux risques des mines et REG.",
+      "p0": "6 000 000 m2 de terres ont été déminées, dépollués et remis à disposition des communautés locales, et sensibilisation de.",
+      "videos": {
+        "video1": "https://drive.google.com/file/d/13D04zSor8mjt-EM78_fd1pmJwjyF9XAi/preview"
       }
     },
     "assistance": {
-      "title": "Assistance aux victimes",
-      "description": "",
+      "title": "Assistance aux victimes et protection sociale",
+      "description": "Dans ce volet, le projet assure par le biais du Centre d’Appareillage et de Rééducation de Kabalaye (CARK), la réadaptation fonctionnelle (kinésithérapie, orthopédie, rééducation) des personnes victimes de mine/REG et des personnes handicapées indigentes afin d’améliorer leur autonomie fonctionnelle et de favoriser ainsi leur (ré) insertion sociale.",
       "gallery": {
         "gwenn": {
           "victimes_fada_2": "Un orthopédiste de la SECADEV prend l’empreinte du bras de Adam Mahamat, un berger de 21 ans qui a perdu sa main droite en octobre 2019 en ramassant un reste explosif de guerre. Grace à cette empreinte, une prothèse pourra lui être confectionnée à N’Djamena. « Alors que j’étais dans les pâturages, j’ai vu un objet par terre et je l’ai ramassé. J’ai pris l’objet avec moi, je me suis assis, et j’ai manipulé l’objet. Il y avait un fil jaune et j’ai tiré dessus. L’objet a explosé 2 fois. Je suis tombé. Lorsque je me suis relevé, j’ai vu que mon bras avait disparu ».",
@@ -57,11 +62,15 @@
           "fada_5": "Neloumta, une amputée utilisant des béquilles pour marcher, est bénéficiaire du projet PRODECO, le 27 novembre 2020",
           "fada_1": "Anatole un amputé trans-tibiale portant une prothèse, est employé comme aide orthoprothésiste au Secours Catholique et Développement (SECADEV), le 25 novembre 2020"
         }
+      },
+      "p0": "525 personnes handicapées vulnérables victime de mine ou non ont bénéficiés des soins de massage et tous types d’appareillage, prothèses et orthèses.",
+      "videos": {
+        "video1": "https://drive.google.com/file/d/1fuhzCa-IZJjNMo29FMqBawYf3w_fUygK/preview"
       }
     },
     "insertion": {
-      "title": "Insertion socio-économiques",
-      "description": "",
+      "title": "Insertion Socio-Économiques",
+      "description": "La mise en œuvre des activités d’Insertion Socio-Economique (ISE) s’est faite en lien étroit avec les autres volets qui s’inscrivent dans les politiques locales de développement par notamment la prise en compte des plans locaux et de développement et la collaboration avec les différents Comités d’Action (provinciaux, départementaux et locaux). Le volet ISE s’est appuyé sur les compétences et les capacités des services de l’Etat (éducation, santé, services de l’agriculture et de l’élevage…) présents sur la zone du projet, dans les différentes étapes de mise en œuvre des activités.",
       "gallery": {
         "gwenn": {
           "fada_4_3": "Des femmes se réunissent lors d’une réunion hebdomadaire de leur Association Villageoise d’Épargne et de Crédit à Owoli, un village situé à 10 km de Fada, le 26 novembre 2020.",
@@ -79,15 +88,19 @@
           "fada_8": "Ache Guéné, commerçante, une femme de 38 ans, veuve et mère de 5 enfants, bénéficiaire du projet d’insertion socio-économique de l’ONG Humanité & Inclusion, assise devant son étale au marché de Fada, le 25 novembre 2020.",
           "fada_16": "Recensement des bénéficiaires du projet d’insertion socio-économique d’Humanité & Inclusion avant la distribution du cash, pour le démarrage d’un projet d’élevage lors d’une foire agricole organisée à Owoli, un village situé à 10 km de Fada, le 26 novembre 2020."
         }
+      },
+      "p0": "400 ménages très vulnérables ont été  soutenus pendant une année et demie avec des filets sociaux pour couvrir les besoins sociaux de bases.",
+      "p1": "750 personnes pauvres bénéficient des fonds pour créer ou renforcer leurs AGR.",
+      "p2": "950 personnes ont reçu des formations en gestion afin de mieux conduire leurs activités génératrices de revenus.",
+      "p3": "33 associations villageoise ont été accompagnées pour créer des caisses d’épargne et de crédit.",
+      "p4": "16 associations communautaires ont été accompagnées avec un appui organisationnel et un fond de renforcement de leurs acquis.",
+      "videos": {
+        "video1": "https://drive.google.com/file/d/1VpH2vmSeQYEmXmDfQKC51AkY7dD_3Nll/preview"
       }
     },
-    "recherche": {
-      "title": "Recherche",
-      "description": ""
-    },
     "institutionnel": {
-      "title": "Appui institutionnel",
-      "description": "",
+      "title": "Renforcement institutionnel",
+      "description": "L’objectif est de permettre au Haut-Commissariat National au Déminage (HCND) de jouer pleinement son rôle d’autorité régulatrice du secteur de déminage.\nUn appui technique a été mis en place afin d’accompagner et de renforcer les capacités du HCND en matière de gestion administrative et opérationnelle. Une attention particulière est portée à l’amélioration de la gestion de la base de données IMSMA (Système de Gestion de l’Information de l’Action contre les Mines) et à la mise à jour des normes nationales de déminage.",
       "gallery": {
         "gwenn": {
           "fada_1_2_4": "Une équipe du Haut-Commissariat National au Déminage (HCND) procède au suivi des opérations de l’opérateur MAG sur le champ de mines de Harignala près de Fada le 27 novembre 2020.",
@@ -99,10 +112,15 @@
         "djerabe": {
           "fada_17": "Coordonnateur du HCND, lors de la participation en ligne du HCND à la 18ème Réunion des Etats Partis, dans leur bureau à N’Djamena, le 17 novembre 2020."
         }
+      },
+      "p0": "177 personnes d’institutions gouvernementales et forces de défense et de sécurité ont été formées.",
+      "videos": {
+        "video1": "https://drive.google.com/file/d/1Rxx6RDUqkOznWINMtBrVsOTmZH9O9eTw/preview"
       }
     },
     "section_title": "Volets",
-    "author": "Auteure"
+    "author": "Auteure",
+    "credits": "Crédits et remerciements - Copyright"
   },
   "projects_section": "Volets",
   "footer": {
