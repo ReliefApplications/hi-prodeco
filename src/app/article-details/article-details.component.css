@@ -6,13 +6,12 @@
 
 .header {
   text-align: left;
-  background: red;
   width: 100%;
   max-height: 493px;
 }
 
-h1 {
-  margin-top: 3.5rem;
+#title {
+  margin-top: 2.5rem;
   margin-left: 9rem;
 }
 
@@ -34,9 +33,12 @@ p {
   margin-bottom: 1rem;
 }
 
+pdf-viewer {
+  position: static;
+}
 
 @media (max-width: 701px) {
-  h1 {
+  #title {
     margin-left: 3rem;
   }
 

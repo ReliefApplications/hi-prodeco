@@ -1,15 +1,21 @@
 <div class="row row-cols-2">
   <div style="float: left">
     <a routerLink="/home">
-      <h1>PRODECO</h1>
+      <img id="title" width="300" src="assets/LogoPRODECO.png">
     </a>
   </div>
   <div style="float: right">
     <app-navbar [color]="'black'"></app-navbar>
   </div>
 </div>
-<div class="content">
-  <div>
+<div style="height: 800px; margin-top: 4rem; margin-bottom: 14rem" *ngIf="article.type === 'PDF'; else typeText">
+  <pdf-viewer [src]="article.sourceURL"
+              [original-size]="true"
+              [autoresize]="true"
+  ></pdf-viewer>
+</div>
+<ng-template #typeText>
+  <div class="content">
     <div id="coverImage" class="header" [style.background]="'url(' + article.coverPictureUrl + ')'"
          [style.backgroundPosition]="'center'">
     </div>
@@ -19,8 +25,8 @@
       </div>
       <div class="col-2 text-right">{{formatDate()}}</div>
     </div>
+    <div class="text-left">
+      <p>{{article.description}}</p>
+    </div>
   </div>
-  <div class="text-left">
-    <p>{{article.description}}</p>
-  </div>
-</div>
+</ng-template>

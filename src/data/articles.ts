@@ -1,7 +1,16 @@
 import { Article } from '../model/article';
 
 export const Articles: Article[] = [
-  new Article('1',
+  new Article(
+    '1',
+    '',
+    '',
+    'assets/projects/1/1.jpg',
+    new Date(),
+    '',
+    'PDF',
+    '../../assets/articles/BROCHURE.pdf'),
+  new Article('3',
     'Article1',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     'assets/projects/1/1.jpg',

@@ -71,7 +71,7 @@ a {
 }
 
 @media (max-width: 701px) {
-  h1 {
+  #title {
     margin-left: 3rem;
   }
 

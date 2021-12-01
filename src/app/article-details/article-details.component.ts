@@ -20,6 +20,7 @@ export class ArticleDetailsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    window.scroll(0, 0);
     const articleID = this.route.snapshot.paramMap.get('id');
     this.article = mainStore.articles.find(article => article.id === articleID);
     if (!this.article) {
