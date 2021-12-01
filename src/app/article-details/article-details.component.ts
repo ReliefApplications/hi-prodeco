@@ -2,7 +2,6 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Article } from '../../model/article';
 import { mainStore } from '../../store/main-store';
 import { ActivatedRoute, Router } from '@angular/router';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { getDayMonthYear } from '../../utils/date-utils';
 
 @Component({

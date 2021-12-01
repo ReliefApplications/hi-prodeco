@@ -1,40 +1,49 @@
-<div class="row justify-content-center">
+<div class="row">
   <div class="col-12">
     <h2>{{'articles.section_title' | translate}}</h2>
   </div>
-  <div *ngFor="let article of articles" class="card col-lg-6 col-md-6 col-sm-12" [@fadeInOnEnter]
+  <div style="margin: 0 15px;" class="embed-responsive embed-responsive-16by9 mb-3 justify-content-center">
+    <iframe class="embed-responsive-item"
+            src="https://drive.google.com/file/d/1whtMQXLqYODvihfN_1_ZAoVeMSyBIuyz/preview"
+            allowfullscreen></iframe>
+  </div>
+  <div *ngFor="let article of articles" class="card col-lg-4 col-md-6 col-sm-12" [@fadeInOnEnter]
        [@fadeOutOnLeave]>
     <div [routerLink]="'/article-details/'+article.id">
-      <div class='animated-background' *ngIf="!imagesLoaded.get(article.id); else displayImages"></div>
-      <div>
-        <ng-template #displayImages>
-          <!-- TODO: if we want to add hover animations to article items  -->
-          <!--               [@pulse]="imagesHover.get(article.id) === true"-->
-          <!--               (mouseenter)="mouseEnter(article)"-->
-          <div class="pointer" [@fadeIn]="imagesLoaded.get(article.id)"
-               id="coverImage"
-               [style.background]="'url(' + article.coverPictureUrl + ')'"
-               [style.backgroundPosition]="'center'" loading="lazy"></div>
-        </ng-template>
-        <span *ngIf="imagesLoaded.get(article.id)">{{article.country}}</span>
+      <div class='animated-background' *ngIf="!imagesLoaded.get(article.id)"></div>
+      <div (mouseenter)="mouseEnter(article)"
+           [@fadeIn]="imagesLoaded.get(article.id)"
+           [@pulse]="imagesHover.get(article.id) === true"
+           class="card-body pointer justify-content-sm-center">
+        <img (load)="imageLoaded(article)" class="card-img-top" [src]="article.coverPictureUrl" alt="">
       </div>
 
-      <div class="card-body pointer" *ngIf="imagesLoaded.get(article.id)">
-        <h4 class="card-title">{{article.name}}</h4>
-        <p class="card-text">
-          {{article.description}}
-        </p>
-      </div>
-      <div *ngIf="imagesLoaded.get(article.id)" class="card-footer pointer">{{formatDate(article.date)}}</div>
+      <!--      <div class='animated-background' *ngIf="!imagesLoaded.get(article.id); else displayImages"></div>-->
+      <!--      <div>-->
+      <!--        <ng-template #displayImages>-->
+      <!--          &lt;!&ndash; TODO: if we want to add hover animations to article items  &ndash;&gt;-->
+      <!--          &lt;!&ndash;               [@pulse]="imagesHover.get(article.id) === true"&ndash;&gt;-->
+      <!--          &lt;!&ndash;               (mouseenter)="mouseEnter(article)"&ndash;&gt;-->
+      <!--          <div class="pointer" [@fadeIn]="imagesLoaded.get(article.id)"-->
+      <!--               id="coverImage"-->
+      <!--               [style.background]="'url(' + article.coverPictureUrl + ')'"-->
+      <!--               [style.backgroundPosition]="'center'" loading="lazy"></div>-->
+      <!--        </ng-template>-->
+      <!--        <span *ngIf="imagesLoaded.get(article.id)">{{article.country}}</span>-->
+      <!--      </div>-->
+
+      <!--      <div class="card-body pointer" *ngIf="imagesLoaded.get(article.id)">-->
+      <!--        <h4 class="card-title">{{article.name}}</h4>-->
+      <!--        <p class="card-text">-->
+      <!--          {{article.description}}-->
+      <!--        </p>-->
+      <!--      </div>-->
+      <!--      <div *ngIf="imagesLoaded.get(article.id)" class="card-footer pointer">{{formatDate(article.date)}}</div>-->
     </div>
     <img [id]="article.id" [style.visibility]="'hidden'"
          [src]="article.coverPictureUrl" (load)="imageLoaded(article)"
          alt="" appImg="lazy">
   </div>
 </div>
-<h2>What do we do?</h2>
-<div>
-  <iframe src="https://drive.google.com/file/d/1whtMQXLqYODvihfN_1_ZAoVeMSyBIuyz/preview"
-          allow="autoplay"></iframe>
-</div>
+
 
