@@ -28,8 +28,11 @@
        [style.height]="loading ? '0px' : 'auto'" [src]="currentGalleryImage.url"
        (load)="imageModalLoaded(currentGalleryImage.url)" appImg="lazy">
 
-  <div style="width: 100%; height: 100%" *ngIf="currentGalleryImage.isVideo">
-    <iframe [@fadeInRight]="goNextTransition === true"
+  <div class="embed-responsive embed-responsive-16by9 mb-3 justify-content-center"
+       style="width: 100%; height: 100%"
+       *ngIf="currentGalleryImage.isVideo">
+    <iframe class="embed-responsive-item"
+            [@fadeInRight]="goNextTransition === true"
             [@fadeInLeft]="goPrevTransition === true"
             [src]="(currentGalleryImage.videoURL | translate) | safe"
             allow="autoplay"></iframe>

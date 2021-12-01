@@ -15,9 +15,17 @@ app-navbar {
   z-index: 99;
   top: 3rem;
   left: 2.5rem;
-  /*background: rgba(0, 0, 0, 0.4);*/
+  /*background: rgba(255, 255, 255, 0.4);*/
   padding: 0.2rem 0.6rem;
   border-radius: 0.5rem;
+}
+
+#overlay-header {
+  background: linear-gradient(#DDDDDD, transparent);
+  z-index: 99;
+  height: 300px;
+  width: 100%;
+  position: absolute;
 }
 
 /*h1 {*/
@@ -45,7 +53,8 @@ h2 {
   .content-wrapper {
     margin: 4rem 1rem;
   }
-  #title {
+
+  #title, #overlay-header {
     display: none;
   }
 }
