@@ -92,7 +92,7 @@
          *ngFor="let image of project.gallery; index as i">
       <div class='animated-background' *ngIf="!imagesLoaded.get(image.url)"></div>
       <span (click)="showInFullScreen(content, image, i)" class="pointer" *ngIf="image.isVideo" id="video-marker">
-        <img width="45px" src="/assets/play-circle.svg">
+        <img width="45px" src="./assets/play-circle.svg">
       </span>
       <img [@fadeIn]="imagesLoaded.get(image.url)" [style.height]="!imagesLoaded.get(image.url) ? '0px' : 'auto'"
            (load)="imageLoaded(image.url)" (click)="showInFullScreen(content, image, i)" class="img-fluid cover-img"
