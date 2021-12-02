@@ -12,8 +12,8 @@
   },
   "projects": {
     "deminage": {
-      "title": "Mine clearance (MAG and HI) in northern Chad",
-      "description": "",
+      "title": "Mine clearance / Pollution control",
+      "description": "The main pillar of the project, these interventions made it possible to clean up several dangerous areas through the destruction of Explosive Remnants of War (ERW), anti-tank mines and anti-personnel mines, particularly in the province of Borkou and Ennedi West, allowing a cleaning of mines and Explosive Remnants of War (ERW) from dangerous areas that were once mined.",
       "gallery": {
         "gwenn": {
           "fada_3": "A Humanity & Inclusion deminer works on a decontamination site, contaminated by explosive remnants of war, near the village of Delbo, 37 km from Fada, on December 2, 2020.",
@@ -35,11 +35,16 @@
           "fada_49": "MAG deminers team working on the Harignala decontamination site, 17 km from Fada, on November 25, 2020.",
           "fada_51": "MAG deminers team in full preparation before the start of operations on the Harignala depollution site, 17 km from Fada, on November 25, 2020."
         }
+      },
+      "p1": "17,500 people made aware of mine and ERW risks.",
+      "p0": "6,000,000 m2 of land have been cleared, cleared and made available to local communities, and awareness raising.",
+      "videos": {
+        "video1": "https://drive.google.com/file/d/1jQRa0tTFaZxpKJ7suPVMh_qGu4L1bywY/preview"
       }
     },
     "assistance": {
-      "title": "Victim assistance",
-      "description": "",
+      "title": "Victim assistance and social protection",
+      "description": "In this component, the project provides, through the Kabalaye Equipment and Rehabilitation Center (CARK), the functional rehabilitation (physiotherapy, orthopedics, rehabilitation) of mine victims / ERW and destitute disabled people in order to improve their functional autonomy and thus promote their (re) social integration.",
       "gallery": {
         "gwenn": {
           "victimes_fada_2": "A SECADEV orthopedist takes the arm print of Adam Mahamat, a 21-year-old shepherd who lost his right hand in October 2019 while picking up explosive remnants of war. Thanks to this impression, a prosthesis could be made for him in N’Djamena. “While I was in the pasture, I saw an object on the ground and picked it up. I took the object with me, sat down, and handled the object. There was a yellow thread and I pulled on it. The object exploded twice. I fell. When I got up, I saw that my arm was gone. \"",
@@ -57,11 +62,15 @@
           "fada_5": "Neloumta, an amputee using crutches to walk, is a beneficiary of the PRODECO project, November 27, 2020",
           "fada_1": "Anatole, a trans-tibial amputee wearing a prosthesis, is employed as an orthoprosthetic assistant at Secours Catholique et Développement (SECADEV), November 25, 2020"
         }
+      },
+      "p0": "525 vulnerable disabled people, mine victim or not, benefited from massage treatments and all types of devices, prostheses and orthotics.",
+      "videos": {
+        "video1": "https://drive.google.com/file/d/19pGwMnmpp0uWKfE7SATACEv9cwyX9Jwp/preview"
       }
     },
     "insertion": {
       "title": "Socio-economic integration",
-      "description": "",
+      "description": "The implementation of Socio-Economic Integration (ISE) activities was carried out in close connection with the other components which are part of local development policies, in particular by taking into account local and development plans and collaboration with the various Action Committees (provincial, departmental and local). The ISE component relied on the skills and capacities of the State services (education, health, agriculture and livestock services, etc.) present in the project area, in the various stages of implementation. implementation of activities.",
       "gallery": {
         "gwenn": {
           "fada_4_3": "Women gather at a weekly meeting of their Village Savings and Credit Association in Owoli, a village 10 km from Fada, on November 26, 2020.",
@@ -79,15 +88,19 @@
           "fada_8": "Ache Guéné, trader, a 38-year-old woman, widow and mother of 5 children, beneficiary of the socio-economic integration project of the NGO Humanité & Inclusion, seated in front of her stall in the Fada market, November 25, 2020.",
           "fada_16": "Identification of the beneficiaries of the socio-economic integration project of Humanity & Inclusion before the distribution of cash, for the start of a breeding project during an agricultural fair organized in Owoli, a village located 10 km from Fada , November 26, 2020."
         }
+      },
+      "p0": "400 very vulnerable households were supported for a year and a half with social safety nets to cover basic social needs.",
+      "p1": "750 poor people benefit from funds to create or strengthen their IGAs.",
+      "p2": "950 people received management training in order to better conduct their income-generating activities.",
+      "p3": "33 village associations were supported to create savings and credit unions.",
+      "p4": "16 community associations were supported with organizational support and a fund to strengthen their achievements.",
+      "videos": {
+        "video1": "https://drive.google.com/file/d/1aM5jveN6dpFA00PuC9s87qlUha2gwW8Z/preview"
       }
     },
-    "recherche": {
-      "title": "Research",
-      "description": ""
-    },
     "institutionnel": {
-      "title": "Institutional support\n",
-      "description": "",
+      "title": "Institutional strengthening",
+      "description": "The objective is to allow the National High Commission for Demining (HCND) to fully play its role as regulatory authority in the demining sector.\nTechnical support has been put in place to support and strengthen the capacities of the HCND in administrative and operational management. Particular attention is paid to improving the management of the IMSMA (Mine Action Information Management System) database and updating national demining standards.",
       "gallery": {
         "gwenn": {
           "fada_1_2_4": "A team from the National High Commission for Demining (HCND) is monitoring the operations of the MAG operator on the Harignala minefield near Fada on November 27, 2020.",
@@ -99,10 +112,15 @@
         "djerabe": {
           "fada_17": "HCND Coordinator, during the HCND's online participation in the 18th Meeting of States Parties, in their office in N’Djamena, November 17, 2020."
         }
+      },
+      "p0": "177 people from government institutions and defense and security forces were trained.",
+      "videos": {
+        "video1": "https://drive.google.com/file/d/1yZrRBGqZD_VI6vIXOp5XjjISn195Gkv2/preview"
       }
     },
     "section_title": "Projects",
-    "author": "Author"
+    "author": "Author",
+    "credits": "Credits and acknowledgments - Copyright"
   },
   "projects_section": "Projects",
   "footer": {
