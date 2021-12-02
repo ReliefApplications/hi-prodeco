@@ -36,7 +36,6 @@
     "mdb-ui-kit": "^3.6.0",
     "mobx": "^6.3.0",
     "mobx-angular": "^4.3.0",
-    "ng2-pdf-viewer": "^7.0.2",
     "ngx-countup": "^7.3.3",
     "rxjs": "^6.6.7",
     "tslib": "^2.0.0",

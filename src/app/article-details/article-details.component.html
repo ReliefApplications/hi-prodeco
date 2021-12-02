@@ -8,12 +8,12 @@
     <app-navbar [color]="'black'"></app-navbar>
   </div>
 </div>
-<div style="height: 800px; margin-top: 4rem; margin-bottom: 14rem" *ngIf="article.type === 'PDF'; else typeText">
-  <pdf-viewer [src]="article.sourceURL"
-              [original-size]="true"
-              [autoresize]="true"
-  ></pdf-viewer>
+
+<div class="embed-responsive embed-responsive-16by9 mb-5 mt-5 justify-content-center">
+  <iframe class="embed-responsive-item"
+          [src]="article.sourceURL | safe"></iframe>
 </div>
+
 <ng-template #typeText>
   <div class="content">
     <div id="coverImage" class="header" [style.background]="'url(' + article.coverPictureUrl + ')'"

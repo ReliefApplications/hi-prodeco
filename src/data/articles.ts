@@ -9,10 +9,16 @@ export const Articles: Article[] = [
     new Date(),
     '',
     'PDF',
-    '../../assets/articles/BROCHURE.pdf'),
+    'https://drive.google.com/file/d/1LbIJq0Dh8wiX0vc3FWuz94WKgZO2tcts/preview'
+  ),
   // new Article('3',
   //   'Article1',
-  //   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  //   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+  //   ipsum dolor sit amet, consectetur adipiscing elit.
+  //   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor si
+  //   t amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipis
+  //   cing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
+  //   amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   //   'assets/projects/1/1.jpg',
   //   new Date(),
   //   'Colombia'

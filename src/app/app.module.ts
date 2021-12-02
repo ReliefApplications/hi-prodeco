@@ -23,7 +23,6 @@ import { LazyImgDirective } from '../utils/lazy.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CountUpModule } from 'ngx-countup';
 import { SafePipe } from '../utils/safe-pipe';
-import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 export function HttpLoaderFactory(http: HttpClient): any {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -47,7 +46,6 @@ export function HttpLoaderFactory(http: HttpClient): any {
   imports: [
     BrowserModule,
     HttpClientModule,
-    PdfViewerModule,
     TranslateModule.forRoot(
       {
         loader: {
