@@ -1,12 +1,12 @@
 <ng-template #content let-modal>
 
-  <div *ngIf="!loading" style="position:absolute; top: 0.5rem; right: 0.5rem">
+  <div *ngIf="!loading" style="position:absolute; top: 0.5rem; right: 0.5rem; z-index: 99">
     <img class="pointer" (click)="onCloseModal()" width="25" src="./assets/multiply.svg" alt="">
   </div>
-  <div *ngIf="!loading" style="position:absolute; top: 40%; left: 0.1rem">
+  <div *ngIf="!loading" style="position:absolute; top: 40%; left: 0.1rem; z-index: 99">
     <img (click)="displayPrev()" class="pointer" width="45" src="./assets/angle-left-b.svg" alt="">
   </div>
-  <div *ngIf="!loading" style="position:absolute; top: 40%; right: 0.1rem">
+  <div *ngIf="!loading" style="position:absolute; top: 40%; right: 0.1rem; z-index: 99">
     <img (click)="displayNext()" class="pointer" width="45" src="./assets/angle-right-b.svg" alt="">
   </div>
   <div *ngIf="loading" style="height: 500px;">
