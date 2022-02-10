@@ -3,6 +3,8 @@ import { Article } from '../../../model/article';
 import { getDayMonthYear } from '../../../utils/date-utils';
 import { fadeInAnimation, fadeInOnEnterAnimation, fadeOutOnLeaveAnimation, pulseAnimation } from 'angular-animations';
 
+
+
 @Component({
   selector: 'app-articles',
   templateUrl: './articles.component.html',
@@ -45,3 +47,6 @@ export class ArticlesComponent implements OnInit {
   }
 
 }
+
+
+
