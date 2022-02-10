@@ -7,7 +7,7 @@
             src="https://drive.google.com/file/d/1IimdLh5q6q8fYJKoA4UBzRP7jtSvyA1a/preview"
             allowfullscreen></iframe> -->
           <iframe class="embed-responsive-item"
-            src="{{'videos.url' | translate |safe }}" allowfullscreen></iframe> 
+            [src]="( 'videos.video1' | translate ) | safe" allowfullscreen></iframe> 
   </div>
   <div *ngFor="let article of articles" class="card col-lg-4 col-md-6 col-sm-12" [@fadeInOnEnter]
        [@fadeOutOnLeave]>

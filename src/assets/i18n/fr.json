@@ -41,7 +41,8 @@
       "p0": "6 000 000 m2 de terres ont été déminées, dépollués et remis à disposition des communautés locales, et sensibilisation de.",
       "videos": {
         "video1": "https://drive.google.com/file/d/13D04zSor8mjt-EM78_fd1pmJwjyF9XAi/preview"
-      }
+      },
+      "authors": "deminage auteurs"
     },
     "assistance": {
       "title": "Assistance aux victimes et protection sociale",
@@ -68,7 +69,8 @@
       "p0": "525 personnes handicapées vulnérables victime de mine ou non ont bénéficiés des soins de massage et tous types d’appareillage, prothèses et orthèses.",
       "videos": {
         "video1": "https://drive.google.com/file/d/1fuhzCa-IZJjNMo29FMqBawYf3w_fUygK/preview"
-      }
+      },
+      "authors": "assistance auteurs"
     },
     "insertion": {
       "title": "Insertion Socio-Économiques",
@@ -99,7 +101,8 @@
       "p4": "16 associations communautaires ont été accompagnées avec un appui organisationnel et un fond de renforcement de leurs acquis.",
       "videos": {
         "video1": "https://drive.google.com/file/d/1VpH2vmSeQYEmXmDfQKC51AkY7dD_3Nll/preview"
-      }
+      },
+      "authors": "insertion auteurs"
     },
     "institutionnel": {
       "title": "Renforcement institutionnel",
@@ -120,7 +123,8 @@
       "p0": "177 personnes d’institutions gouvernementales et forces de défense et de sécurité ont été formées.",
       "videos": {
         "video1": "https://drive.google.com/file/d/1Rxx6RDUqkOznWINMtBrVsOTmZH9O9eTw/preview"
-      }
+      },
+      "authors": "institutionnel auteurs"
     },
     "section_title": "Volets",
     "author": "Auteur",
@@ -135,7 +139,7 @@
     "terms_of_use": "Conditions d'utilisation"
   },
   "videos":{
-    "url": "https://drive.google.com/file/d/1IimdLh5q6q8fYJKoA4UBzRP7jtSvyA1a/preview"
+    "video1": "https://drive.google.com/file/d/1IimdLh5q6q8fYJKoA4UBzRP7jtSvyA1a/preview"
   },
   "articles": {
     "section_title": "A propos du projets"

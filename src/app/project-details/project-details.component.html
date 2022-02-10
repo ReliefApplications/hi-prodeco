@@ -87,20 +87,11 @@
     </div>
     <h5>{{'projects.credits' | translate}}</h5>  
 
-<!-- Project autors test 
+<!-- Project autors test  -->
 
-<div *ngIf="project.id==deminage">
-  <p>{{'projects.autors' | translate}}></p>
+<div>
+  <p >{{'projects.' + project.id + '.authors' | translate}}</p>
 </div>
-  <div *ngIf="project.id==assistance">
-  <p>{{'projects.autors' | translate}}></p>
-</div>
-  <div *ngIf="project.id==insertion">
-  <p> {{'projects.autors' | translate}}></p>
-</div>
-  <div *ngIf="project.id==institutionnel">
-  <p> {{'projects.autors' | translate}}></p>
-</div> -->
 
 
   </div>

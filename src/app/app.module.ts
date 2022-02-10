@@ -22,7 +22,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LazyImgDirective } from '../utils/lazy.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CountUpModule } from 'ngx-countup';
-import { SafePipe } from './pipes/safe.pipe';
+import { SafePipe } from '../utils/safe-pipe';
 
 export function HttpLoaderFactory(http: HttpClient): any {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
