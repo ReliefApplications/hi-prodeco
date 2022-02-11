@@ -41,7 +41,7 @@ export function HttpLoaderFactory(http: HttpClient): any {
     NavbarComponent,
     ArticleDetailsComponent,
     LazyImgDirective,
-    SafePipe,
+    SafePipe
   ],
   imports: [
     BrowserModule,
@@ -67,4 +67,3 @@ export function HttpLoaderFactory(http: HttpClient): any {
 })
 export class AppModule {
 }
-
