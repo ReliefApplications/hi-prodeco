@@ -40,7 +40,8 @@
       "p0": "6,000,000 m2 of land have been cleared, cleared and made available to local communities, and awareness raising.",
       "videos": {
         "video1": "https://drive.google.com/file/d/1jQRa0tTFaZxpKJ7suPVMh_qGu4L1bywY/preview"
-      }
+      },
+      "authors": "Gwenn Dubourthoumieu & Djérabé Ndigngar"
     },
     "assistance": {
       "title": "Victim assistance and social protection",
@@ -66,7 +67,8 @@
       "p0": "525 vulnerable disabled people, mine victim or not, benefited from massage treatments and all types of devices, prostheses and orthotics.",
       "videos": {
         "video1": "https://drive.google.com/file/d/19pGwMnmpp0uWKfE7SATACEv9cwyX9Jwp/preview"
-      }
+      },
+      "authors": "Gwenn Dubourthoumieu & Debora Edith Ngaba"
     },
     "insertion": {
       "title": "Socio-economic integration",
@@ -96,7 +98,8 @@
       "p4": "16 community associations were supported with organizational support and a fund to strengthen their achievements.",
       "videos": {
         "video1": "https://drive.google.com/file/d/1aM5jveN6dpFA00PuC9s87qlUha2gwW8Z/preview"
-      }
+      },
+      "authors": "Gwenn Dubourthoumieu & Djérabé Ndigngar"
     },
     "institutionnel": {
       "title": "Institutional strengthening",
@@ -116,10 +119,10 @@
       "p0": "177 people from government institutions and defense and security forces were trained.",
       "videos": {
         "video1": "https://drive.google.com/file/d/1yZrRBGqZD_VI6vIXOp5XjjISn195Gkv2/preview"
-      }
+      },
+      "authors": "Gwenn Dubourthoumieu & Djérabé Ndigngar"
     },
     "section_title": "Projects",
-    "author": "Author",
     "credits": "Credits and acknowledgments - Copyright"
   },
   "projects_section": "Projects",
@@ -127,6 +130,9 @@
     "support": "Support",
     "privacy_policy": "Privacy policy",
     "terms_of_use": "Terms of use"
+  },
+  "videos":{
+    "video1": "https://drive.google.com/file/d/1whtMQXLqYODvihfN_1_ZAoVeMSyBIuyz/preview"
   },
   "articles": {
     "section_title": "About the projects"
