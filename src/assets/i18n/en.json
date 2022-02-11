@@ -4,21 +4,21 @@
     "subtitle": "Support for demining, development and social protection of vulnerable people"
   },
   "indicators": {
-    "treated_patients": "Treated patients",
-    "person_trained": "Persons trained on Humanitarian Mine Action",
+    "treated_patients": "Patients who received orthopaedic and physical therapy",
+    "person_trained": "Persons from government institutions trained",
     "social_services": "Persons who have benefited of social services",
-    "depolluted": "m2 depolluted",
-    "education_sessions": "Persons who have benefited of risk education sessions"
+    "depolluted": "m2 released",
+    "education_sessions": "People who received risk education sessions"
   },
   "projects": {
     "deminage": {
-      "title": "Mine clearance / Pollution control",
+      "title": "Mine Action",
       "description": "The main pillar of the project, these interventions made it possible to clean up several dangerous areas through the destruction of Explosive Remnants of War (ERW), anti-tank mines and anti-personnel mines, particularly in the province of Borkou and Ennedi West, allowing a cleaning of mines and Explosive Remnants of War (ERW) from dangerous areas that were once mined.",
       "gallery": {
         "gwenn": {
           "fada_3": "A Humanity & Inclusion deminer works on a decontamination site, contaminated by explosive remnants of war, near the village of Delbo, 37 km from Fada, on December 2, 2020.",
-          "fada_4": "Tabin Lissendja, technical advisor for Humanity & Inclusion, examines drop boxes found near the village of Delbo, 37 km from Fada.",
-          "fada_5": "Tabin Lissendja, technical advisor for Humanity & Inclusion, is preparing the demolition of explosive remnants of war found near the village of Delbo, about 45 km from Fada.",
+          "fada_4": "Tabin Lissendja, Technical Advisor for Humanity & Inclusion, examines cluster bomb casings found near the village of Delbo, 37 km from Fada. These cluster bombs are no longer dangerous because they have been neutralized by the teams, which means that they have been emptied of their explosive charge. Fada, 2 December 2020. ©Gwenn Dubourthoumieu, PRODECO.",
+          "fada_5": "Tabin Lissendja, Technical Advisor for Humanity & Inclusion, is preparing the demolition of explosive remnants of war found near the village of Delbo, about 45 km from Fada.",
           "fada_7": "Hassan Bokori (left) and Sylvestre Ngarsenodji (right), investigators for Humanity & Inclusion's demining teams, conduct a non-technical investigation using a drone near Fada on December 5, 2020.",
           "fada_1": "Tchou Modi, a man in his sixties, father of 12 children, is a breeder of camels and goats. His small herd grazes around Inou, a village which is located just a few kilometers from the Harignala minefield, not far from Fada. He has already lost 3 camels that got lost in the minefield. Accidents are recurrent: in his village, herders have already lost 36 camels in the area that MAG is currently demolishing. A few years ago, 2 people including a child also lost their lives handling an Explosive Remnant of War found in this area.",
           "mag_fada_3": "MAG teams are demining Harignala near Fada on November 30, 2020, using the ARMTRAC demining machine.",
@@ -57,11 +57,11 @@
           "victimes_ndjamena_10": "Idriss Moumin, 44 years old and father of 8 children, tries new prostheses provided by the PRODECO project at the fitting and rehabilitation center of Kabalaye, a district of N'Djamena, on November 20, 2020. He lost both of his legs on November 20, 2020. April 13, 2006 in the explosion of a car bomb in N'Djamena."
         },
         "debora": {
-          "fada_2": "Djedouboum a trans-tibial amputee wearing a prosthesis, is a mechanic and beneficiary of the PRODECO project, November 26, 2020",
+          "fada_2": "Djedouboum was a victim of the suicide attack on the N'Djamena market in 2015. The attack left 15 people dead and 80 injured, and Djedouboum lost his leg in the explosion. The prosthesis he received in 2017 was damaged and no longer allowed him to work as a mechanic. Thanks to the PRODECO project, Djedouboum was able to receive a new prosthesis in 2020.N'Djamena, 26 November 2020. Debora Edith Ngaba, PRODECO",
           "fada_3": "Rachel Datché, a trans-tibial amputee wearing a prosthesis, is a beneficiary of the PRODECO project, November 26, 2020",
           "fada_4": "Rosine, Double trans-tibial amputee wearing two prostheses, is beneficiary of the PRODECO project, November 26, 2020",
           "fada_5": "Neloumta, an amputee using crutches to walk, is a beneficiary of the PRODECO project, November 27, 2020",
-          "fada_1": "Anatole, a trans-tibial amputee wearing a prosthesis, is employed as an orthoprosthetic assistant at Secours Catholique et Développement (SECADEV), November 25, 2020"
+          "fada_1": "Anatole is a former soldier who was wounded on the front in 2003. He was fitted with a brace by CARK at the time. He was then trained to become an ortho-prosthetic assistant. Today he contributes directly to the support provided to patients benefiting from the PRODECO project. N'Djamena, 25 November 2020. Debora Edith Ngaba, PRODECO"
         }
       },
       "p0": "525 vulnerable disabled people, mine victim or not, benefited from massage treatments and all types of devices, prostheses and orthotics.",
@@ -128,6 +128,8 @@
   "projects_section": "Projects",
   "footer": {
     "support": "Support",
+    "finance": "Financed by the European Union",
+    "hcnd": "In partnership with HCND",
     "privacy_policy": "Privacy policy",
     "terms_of_use": "Terms of use"
   },
