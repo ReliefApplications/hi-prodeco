@@ -114,4 +114,6 @@ export class ProjectDetailsComponent implements OnInit {
   imageModalLoaded(url: string): void {
     this.loading = false;
   }
+
+
 }

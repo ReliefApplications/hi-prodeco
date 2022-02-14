@@ -19,8 +19,8 @@ export class ProjectsComponent implements OnInit {
   @Input()
   projects: Project[] = [];
 
-  @Output()
-  allImagesLoaded: EventEmitter<void> = new EventEmitter<void>();
+  /** @Output()
+  allImagesLoaded: EventEmitter<void> = new EventEmitter<void>(); **/
 
   imagesLoaded: Map<string, boolean> = new Map<string, boolean>([]);
   imagesHover: Map<string, boolean> = new Map<string, boolean>([]);
@@ -41,7 +41,7 @@ export class ProjectsComponent implements OnInit {
         return;
       }
     }
-    this.allImagesLoaded.emit();
+    /** this.allImagesLoaded.emit();**/
   }
 
   mouseEnter(project: Project): void {
