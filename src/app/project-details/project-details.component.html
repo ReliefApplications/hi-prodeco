@@ -58,8 +58,13 @@
        class="modal-footer">
     <div [@fadeIn]="shoGalleryInfo === true" class="btn-block ml-1">
       <p>{{'projects.' + project.id + '.gallery.' + currentGalleryImage.description | translate}}</p>
+      <p (click)="showAuthors(authors)">{{'projects.author' | translate}}: {{currentGalleryImage.author}}</p>
     </div>
   </div>
+</ng-template>
+
+<ng-template #authors>
+  hey
 </ng-template>
 
 
@@ -73,6 +78,7 @@
     <app-navbar [color]="'black'"></app-navbar>
   </div>
 </div>
+
 <div class="content">
   <div class="header">
     <h2>{{'projects.' + project.id + '.title' | translate}}</h2>
@@ -89,6 +95,7 @@
       <p >{{'projects.' + project.id + '.authors' | translate}}</p>
     </div>
   </div>
+
   <div class="row justify-content-center">
     <div [@fadeInOnEnter] [@fadeOutOnLeave] class="col-lg-4 col-md-6 col-sm-12"
          *ngFor="let image of project.gallery; index as i">
