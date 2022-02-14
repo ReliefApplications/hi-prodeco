@@ -5,13 +5,16 @@
   <img width="300" src="assets/LogoPRODECO.png">
 </div>
 <app-navbar></app-navbar>
-<app-header [loadVideo]="videoURL"></app-header>
+<app-header [loadVideo]="'videos.video2' | translate"></app-header>
 <div class="content-wrapper">
   <app-indicators [indicators]="indicators"></app-indicators>
   <div class="text-center">
     <h2>{{ 'header.title' | translate }}</h2>
     <h4>{{ 'header.subtitle' | translate }}</h4>
-  </div>
-  <app-projects [projects]="projects" (allImagesLoaded)="loadVideo()"></app-projects>
+</div>
+  <!-- <app-projects [projects]="projects" (allImagesLoaded)="loadVideo()"></app-projects> -->
+  <app-projects [projects]="projects"></app-projects>
   <app-articles [articles]="articles"></app-articles>
 </div>
+
+
