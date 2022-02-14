@@ -74,6 +74,10 @@ export class ProjectDetailsComponent implements OnInit {
     this.modalService.open(content, {centered: true, size: 'xl'});
   }
 
+  showAuthors(content: any) {
+    this.modalService.open(content, {centered: true, size: 'xl'});
+  }
+
   onCloseModal(): void {
     this.modalService.dismissAll();
     this.currentGalleryImageIndex = null;
