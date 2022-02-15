@@ -70,14 +70,19 @@ a {
   background-color: white;
 }
 
+.authorsContainer{
+  position: relative;
+}
+
 .img-author {
-  margin-left: 7%;
+  margin: auto;
   width: 1050px;
 }
 
 .AClass{
-  right:0px;
   position: absolute;
+  margin-top: 6px;
+  margin-right: 40px;
 }
 
 .closeAuthor {

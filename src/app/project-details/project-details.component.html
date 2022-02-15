@@ -63,18 +63,11 @@
   </div>
 </ng-template>
 
-<ng-template #authors>
-  <div style="position:relative;">
-    <div type="submit" class="closeAuthor AClass" (click)="onCloseModal()" >
-       <span>&times;</span>
-    </div>
-    <img class="img-author" src="assets/biographie.png"/>
-</div>
-<!--
-  <div>
-    <div class="AClass close link" (click)="onCloseModal()">x</div>
-    <img  class="img-author" width="1000" src="assets/biographie.png"> 
-  </div> -->
+<ng-template #authors let-modal class="authorsContainer">
+  <img class="img-author" src="assets/biographie.png"/>
+  <div type="submit" class="closeAuthor AClass" (click)="modal.close()" >
+    <span>&times;</span>
+  </div>
 </ng-template>
 
 
