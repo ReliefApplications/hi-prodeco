@@ -58,16 +58,23 @@
        class="modal-footer">
     <div [@fadeIn]="shoGalleryInfo === true" class="btn-block ml-1">
       <p>{{'projects.' + project.id + '.gallery.' + currentGalleryImage.description | translate}}</p>
-      <p (click)="showAuthors(authors)">{{'projects.author' | translate}}: {{currentGalleryImage.author}}</p>
+      <p class="pointer" (click)="showAuthors(authors)">{{'projects.author' | translate}}: {{currentGalleryImage.author}}</p>
     </div>
   </div>
 </ng-template>
 
 <ng-template #authors>
+  <div style="position:relative;">
+    <div type="submit" class="closeAuthor AClass" (click)="onCloseModal()" >
+       <span>&times;</span>
+    </div>
+    <img class="img-author" src="assets/biographie.png"/>
+</div>
+<!--
   <div>
-    <div class="close" (click)="onCloseModal()">x</div>
-      <div><img  width="1000" src="assets/biographie.png"></div>
-  </div>
+    <div class="AClass close link" (click)="onCloseModal()">x</div>
+    <img  class="img-author" width="1000" src="assets/biographie.png"> 
+  </div> -->
 </ng-template>
 
 

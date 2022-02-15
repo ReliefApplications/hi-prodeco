@@ -70,6 +70,28 @@ a {
   background-color: white;
 }
 
+.img-author {
+  margin-left: 7%;
+  width: 1050px;
+}
+
+.AClass{
+  right:0px;
+  position: absolute;
+}
+
+.closeAuthor {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  line-height: 14px;
+  min-width: auto;
+  color: #fff;
+  background: transparent;
+  border: none;
+  font-size: 2em;
+}
+
 @media (max-width: 701px) {
   #title {
     margin-left: 3rem;
@@ -78,6 +100,33 @@ a {
   .header, .content {
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+}
+
+@media (max-width: 400px){
+
+  .img-author {
+    margin-left: 0%;
+    width: 380px;
+  }
+
+}
+
+@media (min-width:401px) and (max-width: 760px){
+
+  .img-author {
+    margin-left: 0%;
+    width: auto;
+  }
+
+}
+
+@media (min-width:761px) and (max-width: 1080px){
+
+  .img-author {
+    margin-left: 0%;
+    width: 500px;
   }
 
 }
