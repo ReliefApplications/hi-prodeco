@@ -26,6 +26,9 @@ import {
     fadeInLeftAnimation()
   ]
 })
+
+
+
 export class ProjectDetailsComponent implements OnInit {
 
   public project: Project = null;
@@ -41,11 +44,16 @@ export class ProjectDetailsComponent implements OnInit {
   public goPrevTransition = false;
   public goNextTransition = false;
 
+
+
   constructor(private route: ActivatedRoute, private router: Router,
               public modalService: NgbModal, public translate: TranslateService) {
-  }
 
-  ngOnInit(): void {
+}
+
+
+  
+   ngOnInit(): void {
     window.scroll(0, 0);
     const projectID = this.route.snapshot.paramMap.get('id');
     this.project = mainStore.projects.find(project => project.id === projectID);
@@ -71,6 +79,10 @@ export class ProjectDetailsComponent implements OnInit {
     this.loading = !image.isVideo;
     this.currentGalleryImage = image;
     this.currentGalleryImageIndex = index;
+    this.modalService.open(content, {centered: true, size: 'xl'});
+  }
+
+  showAuthors(content: any) {
     this.modalService.open(content, {centered: true, size: 'xl'});
   }
 
@@ -110,4 +122,8 @@ export class ProjectDetailsComponent implements OnInit {
   imageModalLoaded(url: string): void {
     this.loading = false;
   }
+
+
+
+
 }

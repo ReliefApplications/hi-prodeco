@@ -123,7 +123,7 @@
       "authors": "Gwenn Dubourthoumieu & Djérabé Ndigngar"
     },
     "section_title": "Volets",
-    "author": "Auteure",
+    "author": "Auteur",
     "credits": "Crédits et remerciements - Copyright"
   },
   "projects_section": "Volets",
@@ -135,7 +135,8 @@
     "terms_of_use": "Conditions d'utilisation"
   },
   "videos":{
-    "video1": "https://drive.google.com/file/d/1IimdLh5q6q8fYJKoA4UBzRP7jtSvyA1a/preview"
+    "video1": "https://drive.google.com/file/d/1IimdLh5q6q8fYJKoA4UBzRP7jtSvyA1a/preview",
+    "video2": "assets/cover_video.mp4"
   },
   "articles": {
     "section_title": "A propos du projets"
