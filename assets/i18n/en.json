@@ -123,6 +123,7 @@
       "authors": "Gwenn Dubourthoumieu & Djérabé Ndigngar"
     },
     "section_title": "Projects",
+    "author": "Author",
     "credits": "Credits and acknowledgments - Copyright"
   },
   "projects_section": "Projects",
@@ -134,7 +135,8 @@
     "terms_of_use": "Terms of use"
   },
   "videos":{
-    "video1": "https://drive.google.com/file/d/1whtMQXLqYODvihfN_1_ZAoVeMSyBIuyz/preview"
+    "video1": "https://drive.google.com/file/d/1whtMQXLqYODvihfN_1_ZAoVeMSyBIuyz/preview",
+    "video2": "assets/cover_video_english.mp4"
   },
   "articles": {
     "section_title": "About the projects"
